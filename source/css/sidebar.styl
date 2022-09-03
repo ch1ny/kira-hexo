@@ -1,11 +1,13 @@
 .kira-sidebar {
     scrollbar-width: none;
-    width: 240px;
+    max-width: 240px;
     user-select none;
     max-height: 100vh;
     overflow: auto;
     position: sticky;
     top: 0;
+    flex-shrink: 0;
+    transition all 0.3s ease-out
 
     .kira-avatar {
         margin: 25px;
@@ -221,4 +223,16 @@
 
 .kira-sidebar::-webkit-scrollbar {
     display: none;
+}
+
+.kira-sidebar-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index 9998;
+    pointer-events: none;
+    transition: background-color 0.3s ease;
+    background-color: rgba(0, 0, 0, 0);
 }

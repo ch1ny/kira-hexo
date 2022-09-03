@@ -1,9 +1,8 @@
-<div class="kira-sidebar">
+<div class="kira-sidebar" id="sidebar">
 	<div class="kira-avatar">
 		<a href="<%= theme.avatar %>" title="<%= config.author || config.title %>">
 			<img
 				src="<%= theme.avatar %>"
-				alt="<%= config.author || config.title %>"
 				alt="<%= config.author || config.title %>"
 			/>
 		</a>
@@ -42,3 +41,7 @@
 		<%- theme.sidebar %>
 	</div>
 </div>
+<div class="kira-sidebar-modal" id="sidebar-modal" onclick="(function(self) {
+	self.classList.remove('show');
+	document.querySelector('.kira-sidebar.show#sidebar').classList.remove('show');
+})(this)"></div>

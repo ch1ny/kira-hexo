@@ -29,6 +29,7 @@
 			class="kira-background"
 			style="background-image: url('<%= theme.background.path %>')"
 		></div>
+		<%- include("components/header") %>
 		<div class="kira-body">
 			<%- include("components/sidebar") %>
 			<div class="kira-content" id="kira-content">
@@ -36,7 +37,7 @@
 					<%- body %>
 				</div>
 			</div>
-			<!%- include("components/right-column") %>
+			<%- include("components/right-column") %>
 		</div>
 	</body>
 </html>
