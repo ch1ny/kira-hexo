@@ -1,0 +1,100 @@
+$gutter = 25px;
+$radius = 13px;
+
+@import 'color.styl';
+
+body {
+    max-width: 100%;
+    margin: auto !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+*::selection {
+    background: rgb(0, 174, 255);
+    color: #fff;
+    text-shadow: none;
+}
+
+img::selection {
+    background: rgba(255, 182, 182, 0.3)
+}
+
+figure.highlight table tbody tr{
+    td.gutter {
+        user-select: none;
+    }
+
+    td.code pre *::selection {
+    background: rgb(255, 90, 134);
+    }
+}
+
+.kira-background {
+    opacity: 0.2;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.kira-body {
+    display: flex;
+    justify-content: center;
+}
+
+.kira-rainbow {
+    a:nth-child(7n+1) {
+        background-color: $nrbgc1;
+        color: $color1;
+    }
+
+    a:nth-child(7n+2) {
+        background-color: $nrbgc2;
+        color: $color2;
+    }
+
+    a:nth-child(7n+3) {
+        background-color: $nrbgc3;
+        color: $color3;
+    }
+
+    a:nth-child(7n+4) {
+        background-color: $nrbgc4;
+        color: $color4;
+    }
+
+    a:nth-child(7n+5) {
+        background-color: $nrbgc5;
+        color: $color5;
+    }
+
+    a:nth-child(7n+6) {
+        background-color: $nrbgc6;
+        color: $color6;
+    }
+
+    a:nth-child(7n+7) {
+        background-color: $nrbgc7;
+        color: $color7;
+    }
+}
+
+.kira-rainbow-fill {
+    a {
+        color: #fff
+    }
+}
+
+@import 'article.styl';
+
+@import 'sidebar.styl';
+@import 'content.styl';
+@import 'right-column.styl';
+@import 'post.styl';
+@import 'archive.styl';

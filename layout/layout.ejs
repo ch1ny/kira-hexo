@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html <% if (config.language) { %>
+	lang="<%- config.language %>"<% } %>>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<%- css("css/layout") %> <% var title=page.title; if (is_archive()){ title=__('archive'); if
+		(is_month()){ title +='：' + page.year + '/' + page.month; } else if (is_year()){ title
+		+='：' + page.year; } } else if (is_category()){ title=__('count.categories') + '：' +
+		page.category; } else if (is_tag()){ title=__('count.tags') + '：' + page.tag; } %>
+		<title><% if (title){ %> <%= title %> - <% } %> <%= config.title %></title>
+		<link rel="stylesheet" href="/lib/mdui/css/mdui.min.css" />
+		<script src="/lib/mdui/js/mdui.min.js"></script>
+		<script src="https://unpkg.com/lazysizes@5.1.0/lazysizes.min.js"></script>
+		<script src="https://unpkg.com/smooth-scrolling.js@latest"></script>
+		<link rel="stylesheet" href="/lib/highlight/styles/atom-one-dark.min.css">
+		<script src="/lib/highlight/highlight.min.js"></script>
+		<link rel="stylesheet" href="/lib/iconfont/iconfont.css" crossorigin />
+		<link
+			rel="shortcut icon"
+			href="<%= theme.favicon.href %>"
+			type="<%= theme.favicon.type %>"
+		/>
+	</head>
+
+	<body>
+		<div
+			class="kira-background"
+			style="background-image: url('<%= theme.background.path %>')"
+		></div>
+		<div class="kira-body">
+			<%- include("components/sidebar") %>
+			<div class="kira-content" id="kira-content">
+				<div class="kira-main-content">
+					<%- body %>
+				</div>
+			</div>
+			<!%- include("components/right-column") %>
+		</div>
+	</body>
+</html>

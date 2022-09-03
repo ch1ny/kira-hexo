@@ -1,0 +1,30 @@
+{
+	"name": "kira-hexo",
+	"version": "1.0.0",
+	"description": "A kirameki ✨ hexo theme for your blog.",
+	"keywords": [
+		"hexo",
+		"theme",
+		"kira"
+	],
+	"license": "Apache-2.0",
+	"main": "index.js",
+	"author": "德布罗煜",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/ch1ny/kira-hexo.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ch1ny/kira-hexo/issues"
+	},
+	"homepage": "https://hexo.kira.host/",
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
+	"dependencies": {
+		"hexo-tag-aplayer": "^3.0.4",
+		"hexo-wordcount": "^6.0.1"
+	}
+}
