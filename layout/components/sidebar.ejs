@@ -1,5 +1,5 @@
 <div class="kira-sidebar" id="sidebar">
-	<div class="kira-avatar">
+	<div class="kira-avatar mdui-ripple">
 		<a href="<%= theme.avatar %>" title="<%= config.author || config.title %>">
 			<img
 				src="<%= theme.avatar %>"
@@ -31,8 +31,7 @@
 	</aside>
 	<div class="kira-copyright">
 		&copy; <%= date(new Date(), 'YYYY') %>
-		<a href="https://github.com/ch1ny/ch1ny.github.io" target="_blank"
-			><%= config.author || config.title %></a
+		<a href="/"><%= config.author || config.title %></a
 		>
 		<%= __('Powered by') %> <a href="http://hexo.io/" target="_blank">Hexo</a> &
 		<!-- TODO: github 链接 -->
