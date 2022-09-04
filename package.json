@@ -18,11 +18,6 @@
 		"url": "https://github.com/ch1ny/kira-hexo/issues"
 	},
 	"homepage": "https://hexo.kira.host/",
-	"config": {
-		"commitizen": {
-			"path": "./node_modules/cz-conventional-changelog"
-		}
-	},
 	"dependencies": {
 		"hexo-tag-aplayer": "^3.0.4",
 		"hexo-wordcount": "^6.0.1"
