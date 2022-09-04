@@ -36,7 +36,10 @@
 		<%= __('Powered by') %> <a href="http://hexo.io/" target="_blank">Hexo</a> &
 		<!-- TODO: github 链接 -->
 		<a href="https://github.com/ch1ny/kira-hexo/" target="_blank">Kira-Hexo</a>
-		<br /><a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备2021007955号</a>
+		<br />
+		<% if (theme.beian) { %>
+			<a href="https://beian.miit.gov.cn/" target="_blank"><%= theme.beian %></a>
+		<% } %>
 		<%- theme.sidebar %>
 	</div>
 </div>
