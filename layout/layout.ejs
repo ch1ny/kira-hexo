@@ -10,12 +10,16 @@
 		+='：' + page.year; } } else if (is_category()){ title=__('count.categories') + '：' +
 		page.category; } else if (is_tag()){ title=__('count.tags') + '：' + page.tag; } %>
 		<title><% if (title){ %> <%= title %> - <% } %> <%= config.title %></title>
-		<link rel="stylesheet" href="/lib/mdui/css/mdui.min.css" />
-		<script src="/lib/mdui/js/mdui.min.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
+		<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+		<!-- lazyload -->
 		<script src="https://unpkg.com/lazysizes@5.1.0/lazysizes.min.js"></script>
+		<!-- smooth-scrolling -->
 		<script src="https://unpkg.com/smooth-scrolling.js@latest"></script>
-		<link rel="stylesheet" href="/lib/highlight/styles/atom-one-dark.min.css">
-		<script src="/lib/highlight/highlight.min.js"></script>
+		<!-- highlight -->
+		<link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.6.0/styles/atom-one-dark.min.css" />
+		<script src="//unpkg.com/@highlightjs/cdn-assets@11.6.0/highlight.min.js"></script>
+		<!-- 预置 kiraicon -->
 		<link rel="stylesheet" href="/lib/iconfont/iconfont.css" crossorigin />
 		<link
 			rel="shortcut icon"
