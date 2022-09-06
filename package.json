@@ -17,7 +17,7 @@
 	"bugs": {
 		"url": "https://github.com/ch1ny/kira-hexo/issues"
 	},
-	"homepage": "https://hexo.kira.host/",
+	"homepage": "https://kira-hexo.aiolia.top/",
 	"dependencies": {
 		"hexo-tag-aplayer": "^3.0.4",
 		"hexo-toc": "^1.1.0",

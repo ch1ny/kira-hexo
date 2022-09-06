@@ -6,7 +6,7 @@ Kira-Hexo，或者你也可以叫它 hexo-theme-kira。正如它的名字一样�
 
 ## 快速开始
 
-你可以在这里学习如何使用 Kira-Hexo 搭建你的风格化网站：[快速开始](http://47.101.165.106:10001/)
+你可以在这里学习如何使用 Kira-Hexo 搭建你的风格化网站：[快速开始](https://kira-hexo.aiolia.top/)
 
 ## 代码仓库
 
