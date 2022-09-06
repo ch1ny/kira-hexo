@@ -4,16 +4,16 @@
     flex-shrink: 1;
     overflow: auto;
     scrollbar-width: none;
+    box-shadow: 0 0 1rem rgba(138, 151, 174, 0.4);
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 
     .kira-main-content {
         position: relative;
-        box-shadow: 0 0 1rem rgba(161, 177, 204, 0.4);
         background-color: #fff;
         max-width: 100%;
         padding: 25px;
         min-height: 96vh;
-        margin-top: 2vh;
-        margin-bottom: 2vh;
 
         .kira-page-nav {
             list-style: none;
@@ -56,20 +56,38 @@
             .kira-post {
                 max-width: 100%;
                 transition: 300ms;
-                padding: 1rem;
+                padding: 6px;
                 border-radius: 1rem;
+
+                article * {
+                    margin: 0;
+                }
+
+                article p {
+                    margin: 0;
+                }
+
+                article .aplayer {
+                    margin: 6px 0 0 0 !important;
+                }
             }
 
             .kira-post:hover {
-                background-color: rgba(0, 0, 0, .1);
+                background-color: rgba(170, 177, 183, 0.1);
             }
 
             .kira-post-meta {
-                margin: 10px 0 !important;
+                margin: 10px 0 0 0 !important;
             }
 
             .kira-post:last-child {
                 margin-bottom: $gutter;
+            }
+
+            .kira-hr {
+                border-bottom: 1px solid rgba(135, 135, 135, 0.3);
+                height: 0;
+                margin-block: 12px;
             }
         }
     }

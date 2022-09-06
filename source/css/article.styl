@@ -1,142 +1,130 @@
 article {
 	color: #444;
 	font-family: microsoft yahei;
-}
 
-article p {
-	line-height: 24px;
-}
+	p {
+		line-height: 24px;
+	}
 
-article code {
-	background-color: rgba(27, 31, 35, 0.05);
-	border-radius: 10px;
-	font-size: 85%;
-	padding: 0.2em 0.4em;
-}
+	code {
+		background-color: rgba(27, 31, 35, 0.05);
+		border-radius: 10px;
+		font-size: 85%;
+		padding: 0.2em 0.4em;
+	}
+	code::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+	}
+	code::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background-color: #888;
+	}
 
-article code::-webkit-scrollbar {
-	width: 10px;
-	height: 10px;
-}
+	.highlight {
+		padding: 0 0.5em;
+		background: #282c34;
+		color: #abb2bf;
+		margin: 25px 0;
+		border-radius: $radius;
+		overflow: auto;
 
-article code::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	background-color: #888;
-}
+		.gutter {
+			border-right: 1px solid #35393b;
+		}
+	}
 
-.highlight {
-	padding: 0 0.5em;
-    background: #282c34;
-	color: #abb2bf;
-	margin: 25px 0;
-	border-radius: $radius;
-	overflow: auto;
-}
+	pre {
+		border-radius: $radius;
+		overflow: hidden;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		margin: 0;
+		padding: 15px 6px 15px 0;
+		position: relative;
+		background: #282c34;
+		line-height: 1.3em;
 
-.highlight .gutter {
-	border-right: 1px solid #35393b;
-}
+		code {
+			position: relative;
+			border: none;
+			border-radius: 0;
+			font-size: 100%;
+			font-family: Consolas;
+		}
+		code:after {
+			color: #5c6370;
+			position: absolute;
+			top: 0.5em;
+			bottom: 0.5em;
+			left: 0;
+			text-align: left;
+			clip: rect(-100px 2em 9999px 0);
+			clip: rect(-100px 5ch 9999px 0);
+			overflow: hidden;
+			padding: 1px 0;
+			padding-left: 12px;
+			background: #282c34;
+		}
+	}
+	pre:before {
+		background: #282c34;
+		height: 32px;
+		margin-bottom: 0;
+		display: block;
+	}
+	pre:after {
+		position: absolute;
+		border-radius: 50%;
+		background: #ff5f56;
+		width: 12px;
+		height: 12px;
+		top: 0;
+		left: 12px;
+		margin-top: 12px;
+		-webkit-box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
+		box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
+	}
 
-article pre {
-	border-radius: $radius;
-	overflow: hidden;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 15px 6px 15px 0;
-	position: relative;
-	background: #282c34;
-	line-height: 1.3em;
-}
+	a {
+		-webkit-transition: color 0.35s ease-out;
+		transition: color 0.35s ease-out;
+		color: $color1;
+		text-decoration: none;
+		word-wrap: break-word;
+	}
+	a:hover, a:focus {
+		color: $color1;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	a.CodePenLink {
+		transition: 0.2s
+		padding: 0.2em;
+		color: rgb(49, 174, 255)
+		border-bottom: 1px solid rgba(49, 174, 255, 0.5);
+	}
+	a.CodePenLink:hover {
+		text-shadow: 0px 0px 5px rgba(49, 174, 255, 0.4);
+		text-decoration: none;
+		border-bottom: 1px solid rgb(49, 174, 255);
+	}
 
-article pre::before {
-	// content: "";
-	background: #282c34;
-	height: 32px;
-	margin-bottom: 0;
-	display: block;
-}
+	p {
+		margin: $gutter 0;
+		position: relative;
+	}
+	p:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
 
-article pre:after {
-	// content: " ";
-	position: absolute;
-	border-radius: 50%;
-	background: #ff5f56;
-	width: 12px;
-	height: 12px;
-	top: 0;
-	left: 12px;
-	margin-top: 12px;
-	-webkit-box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
-	box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
-}
-
-article pre code {
-	position: relative;
-	border: none;
-	border-radius: 0;
-	font-size: 100%;
-	font-family: Consolas;
-}
-
-article pre code:after {
-	color: #5c6370;
-	position: absolute;
-	top: 0.5em;
-	bottom: 0.5em;
-	left: 0;
-	text-align: left;
-	clip: rect(-100px 2em 9999px 0);
-	clip: rect(-100px 5ch 9999px 0);
-	overflow: hidden;
-	padding: 1px 0;
-	padding-left: 12px;
-	background: #282c34;
-}
-
-article a {
-	-webkit-transition: color 0.35s ease-out;
-	transition: color 0.35s ease-out;
-	color: $color1;
-	text-decoration: none;
-	word-wrap: break-word;
-}
-
-article a:hover, article a:focus {
-	color: $color1;
-}
-
-article a:hover {
-	text-decoration: underline;
-}
-
-article a.CodePenLink {
-	transition: 0.2s
-	padding: 0.2em;
-	color: rgb(49, 174, 255)
-	border-bottom: 1px solid rgba(49, 174, 255, 0.5);
-}
-
-article a.CodePenLink:hover {
-	text-shadow: 0px 0px 5px rgba(49, 174, 255, 0.4);
-	text-decoration: none;
-	border-bottom: 1px solid rgb(49, 174, 255);
-}
-
-article p {
-	margin: $gutter 0;
-	position: relative;
-}
-
-article p:after {
-	content: '';
-	clear: both;
-	display: block;
-}
-
-article del {
-	color: #999;
-	font-size: 0.9em;
+	del {
+		color: #999;
+		font-size: 0.9em;
+	}
 }
 
 article > table.kira-album {
@@ -472,14 +460,13 @@ article ul li {
 
 article ul li::before {
 	content: '';
-	width: 14px;
-	height: 14px;
+	width: 10px;
+	height: 10px;
 	background: $color1;
 	display: inline-block;
 	vertical-align: middle;
-	margin-top: -2px;
-	margin-right: 11px;
-	margin-left: -25px;
+	margin-right: 12px;
+	margin-left: -26px;
 	border-radius: 100%;
 	border: 3px solid #fff;
 	z-index: 100;
@@ -489,10 +476,10 @@ article ul li::before {
 article ul li::after {
 	content: '';
 	height: 100%;
-	width: 2px;
+	width: 1.5px;
 	background: rgba(hexo-config('color.first.r'), hexo-config('color.first.g'), hexo-config('color.first.b'), 0.2);
 	position: absolute;
-	left: 6px;
+	left: 6.25px;
 	top: 20px;
 }
 
