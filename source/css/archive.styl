@@ -27,8 +27,8 @@
 
 .kira-archives .categories {
     display: grid;
-    grid-template-columns: repeat(3, 96% / 3);
-    grid-column-gap: 2%;
+    grid-template-columns: repeat(3, 98% / 3);
+    grid-column-gap: 1%;
     grid-row-gap: 12px;
 }
 
@@ -69,20 +69,6 @@
     bottom: 0;
     left: 0;
     z-index: 2;
-}
-
-@media screen and (max-width: 768px) {
-    .kira-archives .categories a {
-        width: calc(50% - 6px);
-    }
-
-    .kira-archives .categories a:nth-child(3n+3) {
-        margin-right: 12px;
-    }
-
-    .kira-archives .categories a:nth-child(2n+2) {
-        margin-right: 0;
-    }
 }
 
 .kira-archives .categories a span {
