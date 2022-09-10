@@ -1,0 +1,131 @@
+.kira-image {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index 99999;
+
+    .kira-image-modal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        transition: all 0.2s ease;
+
+        * {
+            transition: all 0.2s ease;
+        }
+
+        .kira-image-header {
+            width: 100%;
+            height: 64px;
+            background-color: rgb(38, 42, 42);
+            display: flex;
+            color: white;
+        }
+
+        .kira-image-container {
+            width: 100%;
+            height: calc(100% - 64px);
+            display: flex;
+            pointer-events: none;
+
+            div[class^="kira-image-"][class$="-button-panel"] {
+                width: 86px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .kira-image-exchange-button {
+                    width: 56px;
+                    height: 56px;
+                    border-radius: 50%;
+                    color: white;
+                    pointer-events: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    i {
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            .kira-image-list {
+                flex-grow: 1;
+                display: flex;
+                position: relative;
+                animation-duration: 0.2s;
+                animation-fill-mode: forwards;
+
+                div {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        max-width: calc(100% - 12px);
+                        max-height: calc(100% - 24px);
+                    }
+                }
+
+                .kira-image-prev {
+                    transform: translateX(-100vw);
+                }
+
+                .kira-image-next {
+                    transform: translateX(100vw);
+                }
+            }
+        }
+    }
+    .kira-image-modal.visible {
+        pointer-events: auto;
+        background-color: rgba(0, 0, 0, .9);
+
+        .kira-image-container { 
+            div[class^="kira-image-"][class$="-button-panel"] .kira-image-exchange-button:hover {
+                cursor: pointer;
+                background-color: rgba(75, 75, 75, .6);
+            }
+
+            .kira-image-list {
+                div > img {
+                    pointer-events: auto;
+                }    
+            }   
+        }
+    }
+    .kira-image-modal:not(.visible) * {
+        opacity 0;
+        pointer-events: none;
+    }
+}
+
+@keyframes kira-image-to-next {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes kira-image-to-prev {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100vw);
+    }
+}
