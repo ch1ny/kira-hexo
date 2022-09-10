@@ -6,26 +6,6 @@ article {
 		line-height: 24px;
 	}
 
-	code {
-		display: inline;
-		border-radius: 4px;
-		font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace, Roboto, RobotoNum, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Segoe UI';
-		padding: 0 4px;
-		margin: 1px 3px;
-		line-height: 1.1;
-		word-break: break-all;
-		color: $color1;
-		background-color: $nrbgc1;
-	}
-	code::-webkit-scrollbar {
-		width: 10px;
-		height: 10px;
-	}
-	code::-webkit-scrollbar-thumb {
-		border-radius: 10px;
-		background-color: #888;
-	}
-
 	.highlight {
 		padding: 0 0.5em;
 		background: #282c34;
@@ -593,6 +573,18 @@ font.douyin {
 	bottom: 0;
 	width: 100%;
 	z-index: -1;
+}
+
+article > p > code {
+	display: inline;
+	border-radius: 4px;
+	font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace, Roboto, RobotoNum, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Segoe UI';
+	padding: 0 4px;
+	margin: 1px 3px;
+	line-height: 1.1;
+	word-break: break-all;
+	color: $color1;
+	background-color: $nrbgc1;
 }
 
 article div.my-aplayer-container {
