@@ -7,10 +7,15 @@ article {
 	}
 
 	code {
-		background-color: rgba(27, 31, 35, 0.05);
-		border-radius: 10px;
-		font-size: 85%;
-		padding: 0.2em 0.4em;
+		display: inline;
+		border-radius: 4px;
+		font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace, Roboto, RobotoNum, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Segoe UI';
+		padding: 0 4px;
+		margin: 1px 3px;
+		line-height: 1.1;
+		word-break: break-all;
+		color: $color1;
+		background-color: $nrbgc1;
 	}
 	code::-webkit-scrollbar {
 		width: 10px;
@@ -179,6 +184,7 @@ article > table.kira-album img {
 article img {
 	display: block;
 	border-radius: $radius;
+	margin 0 auto;
 }
 
 article img.lazyload, article img.lazyloading {
@@ -469,7 +475,7 @@ article ul li::before {
 	margin-left: -26px;
 	border-radius: 100%;
 	border: 3px solid #fff;
-	z-index: 100;
+	z-index: 3;
 	position: relative;
 }
 

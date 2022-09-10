@@ -37,16 +37,17 @@
                     %></a
                 >
                 <a><i class="kirafont icon-areachart"></i><%= wordcount(page.content) %> 字</a>
-                <a
-                    ><i class="kirafont icon-time-circle-fill"></i>大概 <%= min2read(page.content,
-                    {cn: 250, en: 160}) %> 分钟</a
-                >
+                <a>
+                    <i class="kirafont icon-time-circle-fill"></i>大概
+                    <%= min2read(page.content, {cn: 250, en: 160}) %> 分钟
+                </a>
             </div>
     
-            <article>
-                <% if(page.excerpt) {%> <%- image_auto_lazyload(page.excerpt) %> <%} else{ %> <%-
-                truncate(image_auto_lazyload(page.content), {length: 150, separator: ' '}) %> <% } %>
-            </article>
+            <% if(page.excerpt) {%>
+                <article>
+                    <%- image_auto_lazyload(page.excerpt) %>
+                </article>
+            <% } %>
         </div>
         <div class="kira-hr"></div>
     <% }) %>
