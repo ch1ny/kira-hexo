@@ -17,6 +17,7 @@
         display: flex;
         flex-direction: column;
         transition: all 0.2s ease;
+        backdrop-filter: blur(0px);
 
         * {
             transition: all 0.2s ease;
@@ -39,6 +40,28 @@
                 padding: 0 10px;
                 font-size: 18px;
                 font-variant-numeric: tabular-nums;
+            }
+
+            .kira-image-operation {
+                margin: 0 20px 0 auto;
+                height: 100%;
+                position relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .kira-image-operation-button {
+                    width: 32px;
+                    height: 32px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .kira-image-operation-button:hover {
+                    background-color: rgba(143, 141, 144, .45);
+                }
             }
         }
 
@@ -117,7 +140,8 @@
     }
     .kira-image-modal.visible {
         pointer-events: auto;
-        background-color: rgba(0, 0, 0, .9);
+        background-color: rgba(0, 0, 0, .6);
+        backdrop-filter: blur(2px);
 
         .kira-image-container { 
             div[class^="kira-image-"][class$="-button-panel"] .kira-image-exchange-button:hover {

@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "4118038",
+      "name": "关闭",
+      "font_class": "close",
+      "unicode": "eb6a",
+      "unicode_decimal": 60266
+    },
+    {
+      "icon_id": "4777231",
+      "name": "还原画布",
+      "font_class": "exit-fullscreen",
+      "unicode": "ec13",
+      "unicode_decimal": 60435
+    },
+    {
+      "icon_id": "4777232",
+      "name": "全屏",
+      "font_class": "fullscreen",
+      "unicode": "ec14",
+      "unicode_decimal": 60436
+    },
+    {
+      "icon_id": "5732757",
+      "name": "搜索变小",
+      "font_class": "zoom-out",
+      "unicode": "ec32",
+      "unicode_decimal": 60466
+    },
+    {
+      "icon_id": "5732758",
+      "name": "搜索放大",
+      "font_class": "zoom-in",
+      "unicode": "ec33",
+      "unicode_decimal": 60467
+    },
+    {
+      "icon_id": "6337456",
+      "name": "插入链接",
+      "font_class": "link",
+      "unicode": "ec7f",
+      "unicode_decimal": 60543
+    },
+    {
       "icon_id": "4767059",
       "name": "menu",
       "font_class": "menu",

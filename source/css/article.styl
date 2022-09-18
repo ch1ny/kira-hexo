@@ -25,7 +25,7 @@ article {
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 		margin: 0;
-		padding: 15px 6px 15px 0;
+		padding: 0 6px 0 0;
 		position: relative;
 		background: #282c34;
 		line-height: 1.3em;
@@ -165,6 +165,18 @@ article img {
 	display: block;
 	border-radius: $radius;
 	margin 0 auto;
+}
+
+article img:not(:first-child) {
+	cursor: pointer;
+	transition: all .3s ease;
+}
+article img:not(:first-child):hover {
+	box-shadow: 0 0 10px rgba($krlbgc1, .3)
+	transform: scale(1.01, 1.01);
+}
+article img:not(:first-child):active {
+	transform: scale(1, 1);
 }
 
 article img.lazyload, article img.lazyloading {
@@ -584,7 +596,7 @@ article > p > code {
 	line-height: 1.1;
 	word-break: break-all;
 	color: $color1;
-	background-color: $nrbgc1;
+	background-color: $krlbgc1;
 }
 
 article div.my-aplayer-container {

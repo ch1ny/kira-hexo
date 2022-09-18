@@ -9,6 +9,29 @@ window.onload = () => {
 	const nowImage = modal.querySelector('.kira-image-now > img');
 	const prevImage = modal.querySelector('.kira-image-prev > img');
 	const nextImage = modal.querySelector('.kira-image-next > img');
+	const zoomButton = modal.querySelector(
+		'.kira-image-header > .kira-image-operation > #kira-image-operation-button-zoom'
+	);
+
+	const zoomIn = () => {
+		nowImage.classList.add('zoom');
+		zoomButton.querySelector('i').classList.remove('icon-zoom-in');
+		zoomButton.querySelector('i').classList.add('icon-zoom-out');
+	};
+	const zoomOut = () => {
+		nowImage.style.transform = 'translate(0px, 0px)';
+		nowImage.classList.remove('zoom');
+		zoomButton.querySelector('i').classList.remove('icon-zoom-out');
+		zoomButton.querySelector('i').classList.add('icon-zoom-in');
+	};
+
+	zoomButton.addEventListener('click', () => {
+		if (zoomButton.querySelector('i').classList.contains('icon-zoom-in')) {
+			zoomIn();
+		} else {
+			zoomOut();
+		}
+	});
 	/**
 	 * 2. 定义放大后图片拖动函数
 	 */
@@ -43,9 +66,7 @@ window.onload = () => {
 		nowImage.addEventListener('mousemove', onDragging);
 	};
 	nowImage.addEventListener('mousedown', onDragStart);
-	nowImage.addEventListener('click', () => {
-		nowImage.classList.add('zoom');
-	});
+	nowImage.addEventListener('click', zoomIn);
 	/**
 	 * 3. 声明图片地址缓存
 	 */
@@ -70,25 +91,35 @@ window.onload = () => {
 		modal.querySelector('.kira-image-header > .kira-image-title').innerText = `${nowAlt || ''}`;
 	};
 	/**
-	 * 5. 定义点击事件
+	 * 5. 定义关闭模态屏事件
+	 */
+	const onVisibleModalClick = (evt) => {
+		if (evt.target !== modal) return;
+		onClose();
+	};
+	const onClose = () => {
+		modal.classList.remove('visible');
+		document.querySelector('.kira-body').style.overflow = 'auto';
+		modal.removeEventListener('click', onVisibleModalClick);
+	};
+	modal
+		.querySelector(
+			'.kira-image-header > .kira-image-operation > #kira-image-operation-button-close'
+		)
+		.addEventListener('click', onClose);
+	/**
+	 * 6. 定义点击事件
 	 */
 	const onKiraImagesClick = (index) => {
 		nowImageIndex = index;
-		nowImage.style.transform = 'translate(0px, 0px)';
-		nowImage.classList.remove('zoom');
+		zoomOut();
 		setImageProp();
 		modal.classList.add('visible');
-		const onVisibleModalClick = (evt) => {
-			if (evt.target !== modal) return;
-			modal.classList.remove('visible');
-			document.querySelector('.kira-body').style.overflow = 'auto';
-			modal.removeEventListener('click', onVisibleModalClick);
-		};
 		modal.addEventListener('click', onVisibleModalClick);
 		document.querySelector('.kira-body').style.overflow = 'hidden';
 	};
 	/**
-	 * 6. 定义切换图片函数
+	 * 7. 定义切换图片函数
 	 */
 	let switchingImage = false;
 	const switchImage = (prevOrNext) => {
@@ -110,7 +141,7 @@ window.onload = () => {
 		imgListDom.style.animationName = `kira-image-to-${prevOrNext}`;
 	};
 	/**
-	 * 7. 绑定切换图片函数
+	 * 8. 绑定切换图片函数
 	 */
 	const prevButton = document.querySelector(
 		'.kira-main-content > .kira-image div.kira-image-container > div.kira-image-prev-button-panel > div'
@@ -121,7 +152,7 @@ window.onload = () => {
 	prevButton.addEventListener('click', () => switchImage('prev'));
 	nextButton.addEventListener('click', () => switchImage('next'));
 	/**
-	 * 8. 提取图片地址
+	 * 9. 提取图片地址
 	 */
 	articleImageDoms.forEach((articleImageDom, index) => {
 		imgProps.push({

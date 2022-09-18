@@ -1,8 +1,8 @@
 @font-face {
   font-family: "kirafont"; /* Project id 3299330 */
-  src: url('iconfont.woff2?t=1662228835806') format('woff2'),
-       url('iconfont.woff?t=1662228835806') format('woff'),
-       url('iconfont.ttf?t=1662228835806') format('truetype');
+  src: url('iconfont.woff2?t=1663478988380') format('woff2'),
+       url('iconfont.woff?t=1663478988380') format('woff'),
+       url('iconfont.ttf?t=1663478988380') format('truetype');
 }
 
 .kirafont {
@@ -11,6 +11,30 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+  content: "\eb6a";
+}
+
+.icon-exit-fullscreen:before {
+  content: "\ec13";
+}
+
+.icon-fullscreen:before {
+  content: "\ec14";
+}
+
+.icon-zoom-out:before {
+  content: "\ec32";
+}
+
+.icon-zoom-in:before {
+  content: "\ec33";
+}
+
+.icon-link:before {
+  content: "\ec7f";
 }
 
 .icon-menu:before {
