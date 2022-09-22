@@ -7,10 +7,25 @@ body {
     width: 100%;
     margin: auto !important;
     height: 100vh;
-    overflow-y: hidden;
+    overflow: overlay;
     position: absolute;
     left: 0;
     top: 0;
+}
+
+::-webkit-scrollbar {
+	width: 7px; // 纵向滚动条宽度
+	height: 7px; // 横向滚动条宽度
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, .3)
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2)
 }
 
 a {
@@ -68,15 +83,6 @@ figure.highlight table tbody tr{
 .kira-body {
     display: flex;
     justify-content: center;
-    height: 100%;
-    overflow: auto;
-}
-.kira-body::-webkit-scrollbar-thumb {
-    background: 0 0 5px rgba(0, 0, 0, .3)
-    border-radius: 5px;
-}
-.kira-body::-webkit-scrollbar-track {
-    box-shadow: 0 0 5px rgba(0, 0, 0, .2)
 }
 
 .kira-rainbow {
