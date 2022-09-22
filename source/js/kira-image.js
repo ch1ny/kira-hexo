@@ -126,8 +126,7 @@ window.onload = () => {
 		if (switchingImage) return;
 		switchingImage = true;
 		const imgListDom = document.querySelector('.kira-image .kira-image-modal .kira-image-list');
-		nowImage.style.transform = 'translate(0px, 0px)';
-		nowImage.classList.remove('zoom');
+		zoomOut();
 		setTimeout(() => {
 			imgListDom.style.animationName = '';
 			if (prevOrNext === 'prev') {
