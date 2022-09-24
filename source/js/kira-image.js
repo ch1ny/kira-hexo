@@ -99,7 +99,7 @@ window.onload = () => {
 	};
 	const onClose = () => {
 		modal.classList.remove('visible');
-		document.querySelector('.kira-body').style.overflow = 'auto';
+		document.querySelector('body').style.overflow = 'overlay';
 		modal.removeEventListener('click', onVisibleModalClick);
 	};
 	modal
@@ -116,7 +116,7 @@ window.onload = () => {
 		setImageProp();
 		modal.classList.add('visible');
 		modal.addEventListener('click', onVisibleModalClick);
-		document.querySelector('.kira-body').style.overflow = 'hidden';
+		document.querySelector('body').style.overflow = 'hidden';
 	};
 	/**
 	 * 7. 定义切换图片函数
