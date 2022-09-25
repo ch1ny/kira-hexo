@@ -99,7 +99,7 @@ window.onload = () => {
 	};
 	const onClose = () => {
 		modal.classList.remove('visible');
-		document.querySelector('body').style.overflow = 'overlay';
+		document.querySelector('body').style.overflow = 'auto';
 		modal.removeEventListener('click', onVisibleModalClick);
 	};
 	modal
