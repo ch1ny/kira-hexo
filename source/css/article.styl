@@ -171,15 +171,16 @@ article img {
 	margin 0 auto;
 }
 
-article img:not(:first-child) {
+article img:not(.kira-post-cover-image) {
 	cursor: pointer;
 	transition: all .3s ease;
 }
-article img:not(:first-child):hover {
+article img:not(.kira-post-cover-image):hover {
 	box-shadow: 0 0 10px rgba($krlbgc1, .3)
 	transform: scale(1.01, 1.01);
+	border-radius: 0;
 }
-article img:not(:first-child):active {
+article img:not(.kira-post-cover-image):active {
 	transform: scale(1, 1);
 }
 
