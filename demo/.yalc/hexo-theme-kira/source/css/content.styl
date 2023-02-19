@@ -1,0 +1,91 @@
+.kira-content {
+    position: relative;
+    max-width: 860px;
+    height: fit-content;
+    flex-grow: 1;
+    overflow: auto;
+    scrollbar-width: none;
+    box-shadow: 0 0 1rem rgba(138, 151, 174, 0.4);
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+    .kira-main-content {
+        position: relative;
+        background-color: #fff;
+        max-width: 100%;
+        padding: 25px;
+        min-height: 96vh;
+
+        .kira-page-nav {
+            list-style: none;
+            text-align: center;
+            display: flex;
+            color: #ddd;
+            background-color: #f5f6f5;
+            border-radius: $radius;
+            justify-content: center;
+
+            .page-number {
+                transition: 300ms;
+                margin-inline: 10px;
+            }
+
+            .current {
+                color: #fff;
+                background: $color1;
+                opacity: 0.9;
+                box-shadow: 0 2px 12px $color1;
+            }
+
+            a:not(.current):hover {
+                background-color: rgba(155, 155, 155, .3)
+            }
+        }
+
+        .kira-page-nav > * {
+            color: #999;
+            border-radius: $radius;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            float: left;
+        }
+
+        .kira-posts {
+            position: relative;
+
+            .kira-post {
+                max-width: 100%;
+                transition: 300ms;
+                padding: 10px;
+                border-radius: 1rem;
+
+                article .aplayer {
+                    margin: 6px 0 0 0 !important;
+                }
+            }
+
+            .kira-post:hover {
+                background-color: rgba(170, 177, 183, 0.1);
+            }
+
+            .kira-post-meta {
+                margin: 10px 0 0 0 !important;
+            }
+
+            .kira-post:last-child {
+                margin-bottom: $gutter;
+            }
+
+            .kira-hr {
+                border-bottom: 1px solid rgba(135, 135, 135, 0.3);
+                height: 0;
+                margin-block: 12px;
+            }
+        }
+    }
+}
+
+.kira-content::-webkit-scrollbar {
+    display: none;
+}

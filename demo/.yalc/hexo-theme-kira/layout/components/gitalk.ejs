@@ -1,0 +1,17 @@
+<% if (theme.gitalk.active) { %>
+	<link rel="stylesheet" href="<%- theme.cdn.gitalk.css %>" />
+	<div id="gitalk"></div>
+	<script src="<%- theme.cdn.gitalk.js %>"></script>
+	<script type="text/javascript">
+		var gitalk = new Gitalk({
+			clientID: '<%= theme.gitalk.clientID %>',
+			clientSecret: '<%= theme.gitalk.clientSecret %>',
+			id: '<%=page.title%>',
+			repo: '<%= theme.gitalk.repo %>',
+			owner: '<%= theme.gitalk.owner %>',
+			admin: '<%= theme.gitalk.admin %>',
+			title: '<%= theme.gitalk.title %>',
+		});
+		gitalk.render('gitalk');
+	</script>
+<% } %>

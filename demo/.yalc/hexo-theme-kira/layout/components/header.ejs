@@ -1,0 +1,15 @@
+<div class="kira-header">
+    <a
+        class="kira-drawer-button mdui-ripple"
+        title="导航栏"
+        onclick="document.querySelector('.kira-sidebar-modal').classList.add('show');document.querySelector('.kira-sidebar#sidebar').classList.add('show');"
+    >
+        <i class="kirafont icon-menu"></i>
+    </a>
+    <a href="/" title="<%= config.title %>">
+        <img
+			src="<%= theme.avatar %>"
+			alt="<%= config.author || config.title %>"
+		/>
+    </a>
+</div>
