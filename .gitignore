@@ -7,3 +7,4 @@ public/
 .deploy*/
 _multiconfig.yml
 *.lock
+.yalc/

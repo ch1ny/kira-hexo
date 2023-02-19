@@ -27,6 +27,14 @@
 			href="<%= theme.favicon.href %>"
 			type="<%= theme.favicon.type %>"
 		/>
+		<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/deps/css/APlayer.min.css">
+		<% if (theme.customStyles) { %>
+			<% theme.customStyles.forEach(function(customCss){ %>
+		<link rel="stylesheet" href="/<%= customCss %>.css" />
+			<% }) %>
+		<% } %>
+		<script src="/deps/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>
+		<!-- <script src="/deps/js/Meting.min.js" class="meting-secondary-script-marker"></script> -->
 	</head>
 
 	<body>
