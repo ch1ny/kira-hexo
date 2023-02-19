@@ -1,0 +1,10 @@
+<div class="kira-post">
+	<article class="kira-friend">
+		<%- image_auto_lazyload(page.content) %>
+	</article>
+	<% if (page.comments) { %>
+        <div class="kira-post-footer">
+            <%- partial('components/gitalk') %>
+        </div>
+    <% } %>
+</div>

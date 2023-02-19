@@ -1,0 +1,89 @@
+.kira-archives .tagcloud {
+    margin-bottom: 13px;
+    font-size: 0;
+}
+
+.kira-archives .categories {
+    margin-bottom: 12px;
+    font-size: 0;
+}
+
+.kira-archives .tagcloud a {
+    border-radius: 15px;
+    padding: 6px 12px;
+    font-size: 15px !important;
+    display: inline-block;
+    margin-bottom: 7px;
+    margin-right: 7px;
+}
+
+.kira-archives .tagcloud a:before {
+    content: '# ';
+}
+
+.kira-archives .tagcloud a span:before {
+    content: ' ';
+}
+
+.kira-archives .categories {
+    display: grid;
+    grid-template-columns: repeat(3, 98% / 3);
+    grid-column-gap: 1%;
+    grid-row-gap: 12px;
+}
+
+.kira-archives .categories a {
+    border-radius: 12px;
+    font-size: 16px;
+    display: inline-block;
+    height: 156px;
+    width: 100%;
+    position: relative;
+}
+
+.kira-archives .categories a .bg {
+    background-size: cover;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.kira-archives .categories a:before {
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.kira-archives .categories a h1 {
+    margin: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.kira-archives .categories a span {
+    margin-top: 5px;
+    display: block;
+}
+
+.kira-archives .categories a span:after {
+    content: ' Articles';
+}
+
+.kira-archives article > *:first-child {
+    margin-top: 0;
+}
+
+.kira-archives article > *:last-child {
+    margin-bottom: 0;
+}

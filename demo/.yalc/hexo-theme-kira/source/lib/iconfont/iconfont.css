@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "kirafont"; /* Project id 3299330 */
+  src: url('iconfont.woff2?t=1663478988380') format('woff2'),
+       url('iconfont.woff?t=1663478988380') format('woff'),
+       url('iconfont.ttf?t=1663478988380') format('truetype');
+}
+
+.kirafont {
+  font-family: "kirafont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+  content: "\eb6a";
+}
+
+.icon-exit-fullscreen:before {
+  content: "\ec13";
+}
+
+.icon-fullscreen:before {
+  content: "\ec14";
+}
+
+.icon-zoom-out:before {
+  content: "\ec32";
+}
+
+.icon-zoom-in:before {
+  content: "\ec33";
+}
+
+.icon-link:before {
+  content: "\ec7f";
+}
+
+.icon-menu:before {
+  content: "\e7f4";
+}
+
+.icon-caret-up:before {
+  content: "\e8ec";
+}
+
+.icon-bilibili:before {
+  content: "\e69e";
+}
+
+.icon-gitee:before {
+  content: "\e60c";
+}
+
+.icon-container:before {
+  content: "\e7b0";
+}
+
+.icon-home:before {
+  content: "\e7c6";
+}
+
+.icon-right:before {
+  content: "\e7eb";
+}
+
+.icon-left:before {
+  content: "\e7ec";
+}
+
+.icon-QQ:before {
+  content: "\e882";
+}
+
+.icon-user:before {
+  content: "\e7ad";
+}
+
+.icon-team:before {
+  content: "\e7ae";
+}
+
+.icon-github:before {
+  content: "\e885";
+}
+

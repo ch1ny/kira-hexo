@@ -1,0 +1,85 @@
+<%- partial('components/kira-image') %>
+<div class="kira-post">
+	<article>
+		<% if (page.cover){ %>
+		<div class="kira-post-cover">
+			<img
+				data-src="<%- page.cover %>"
+				data-sizes="auto"
+				alt="<%= page.title %>"
+				class="lazyload  kira-post-cover-image"
+			/>
+			<h1><%= page.title %></h1>
+		</div>
+		<% } else { %>
+		<div
+			class="kira-post-cover"
+			style="padding-bottom: '<%= theme.background.height/theme.background.width * 100 %>%'"
+		>
+			<img
+				data-src="<%- theme.background.path %>"
+				data-sizes="auto"
+				alt="<%= page.title %>"
+				class="lazyload  kira-post-cover-image"
+			/>
+			<h1><%= page.title %></h1>
+		</div>
+		<% } %>
+		<div class="kira-post-meta kira-rainbow" style="margin:10px 0!important;">
+			<a><i class="kirafont icon-calendar-fill"></i><%- date(page.date, "YYYY年MM月DD日") %></a>
+			<a><i class="kirafont icon-areachart"></i><%= wordcount(page.content) %> 字</a>
+			<a><i class="kirafont icon-time-circle-fill"></i>大概 <%= min2read(page.content, {cn: 250, en: 160}) %> 分钟</a>
+		</div>
+		<%- image_auto_lazyload(page.content) %>
+	</article>
+
+	<% if (!page.reprinted){ %> <%- partial('components/copyright') %> <% } %> <% if (page.title !=
+	'关于本人') { %>
+	<div class="kira-post-nav">
+		<nav class="post-nav">
+			<% site.categories.map(function(category){ %> <%
+			page.categories.map(function(page_category){ %> <% if(page_category.name ==
+			category.name){ %>
+			<!-- 先找到与当前文字相同的目录 -->
+			<% let i = 0;%> <% category.posts.sort('date').map(function(post){ %> <% i++; %> <%
+			if(post.title == page.title){ %>
+			<!-- 在找到当前文章所在的 index -->
+			<% let ix = 0;%> <% category.posts.sort('date').map(function(post){ %> <% ix++; %> <%
+			if(ix == i + 1 && post.title){ %>
+			<!-- 下一篇文章 -->
+			<div class="new">
+				<span>下一章</span>
+				<a href="<%- url_for(post.path) %>"> <%= post.title %></a>
+			</div>
+			<% } %> <% if(ix == i - 1 && post.title){ %>
+			<!-- 上一篇文章 -->
+			<div class="old">
+				<span>上一章</span>
+				<a href="<%- url_for(post.path) %>"> <%= post.title %></a>
+			</div>
+			<% } %> <% }) %> <% } %> <% }) %> <% } %> <% })%> <% }) %>
+		</nav>
+	</div>
+	<% } %>
+	<div class="kira-post-meta kira-rainbow">
+		<% if (page.categories && page.categories.length){ %>
+			<%- list_categories(page.categories, {
+				show_count: false,
+				class: 'kirafont icon-appstore-fill ',
+				style: 'none',
+				separator: ''
+			}) %>
+		<% } %>
+		<% if (page.tags && page.tags.length){ %>
+			<%- list_tags(page.tags, {
+				show_count: false,
+				class: 'kirafont icon-tag-fill ',
+				style: 'none',
+				separator: ' '
+			}) %>
+		<% } %>
+	</div>
+	<% if (page.comments){ %>
+	<div class="kira-post-footer"><%- partial('components/gitalk') %></div>
+	<% } %>
+</div>

@@ -1,0 +1,111 @@
+// 响应式布局
+@media (max-width: 1180px) {
+    .kira-sidebar {
+        left: 0;
+    }
+
+    .kira-content {
+        margin-right: auto;
+    }
+
+    .kira-right-column {
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        .kira-backtotop {
+            background-color: rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+@media (max-width: 1120px) {
+    .kira-body::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    body {
+        height: fit-content;
+        overflow: auto;
+
+        .kira-header {
+            height: 60px;
+            padding: 10px;
+            display flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            z-index: 4;
+
+            a {
+                width: 45px;
+                height: 45px;
+                text-align: center;
+                border-radius: 50%;
+                transition: all 0.5s ease;
+
+                i {
+                    font-size: 25px;
+                    line-height: 45px;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                }
+            }
+            a:hover {
+                background-color: rgba(0, 0, 0, .16);
+            }
+        }
+
+        .kira-body {
+            height: fit-content;
+            overflow: visible;
+
+            .kira-sidebar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index 6;
+                transform: translateX(-100%);
+                background-color: white;
+            }
+            .kira-sidebar.show {
+                transform: translateX(0%);
+                width: calc(100% - 56px);
+            }
+            .kira-sidebar-modal.show {
+                pointer-events: auto;
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+            .kira-content {
+                #kira-top-header {
+                    top: calc(-2vh - 80px);
+                }
+
+                margin-right: unset;
+                max-width: 100vw;
+                margin-top: 0;
+            }
+        }
+    }
+    body::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+@media (max-width: 756px) {
+    .kira-archives .categories {
+        grid-template-columns: repeat(2, 98% / 2);
+        grid-column-gap: 2%;
+    }
+}
+
+@media (max-width: 400px) {
+    .kira-archives .categories {
+        grid-template-columns: repeat(1, 100%);
+    }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html <% if (config.language) { %>
+	lang="<%- config.language %>"<% } %>>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<%- css("css/layout") %>
+		<% var title=page.title; if (is_archive()){ title=__('archive'); if
+		(is_month()){ title +='：' + page.year + '/' + page.month; } else if (is_year()){ title
+		+='：' + page.year; } } else if (is_category()){ title=__('count.categories') + '：' +
+		page.category; } else if (is_tag()){ title=__('count.tags') + '：' + page.tag; } %>
+		<title><% if (title){ %> <%= title %> - <% } %> <%= config.title %></title>
+		<link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
+		<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+		<!-- lazyload -->
+		<script src="https://unpkg.com/lazysizes@5.1.0/lazysizes.min.js"></script>
+		<!-- smooth-scrolling -->
+		<script src="https://unpkg.com/smooth-scrolling.js@latest"></script>
+		<!-- highlight -->
+		<link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.6.0/styles/atom-one-dark.min.css" />
+		<script src="//unpkg.com/@highlightjs/cdn-assets@11.6.0/highlight.min.js"></script>
+		<!-- 预置 kiraicon -->
+		<link rel="stylesheet" href="/lib/iconfont/iconfont.css" crossorigin />
+		<link
+			rel="shortcut icon"
+			href="<%= theme.favicon.href %>"
+			type="<%= theme.favicon.type %>"
+		/>
+	</head>
+
+	<body>
+		<div
+			class="kira-background"
+			style="background-image: url('<%= theme.background.path %>')"
+		></div>
+		<%- include("components/header") %>
+		<div class="kira-body">
+			<%- include("components/sidebar") %>
+			<div class="kira-content">
+				<div id="kira-top-header"></div>
+				<div class="kira-main-content">
+					<%- body %>
+				</div>
+			</div>
+			<%- include("components/right-column") %>
+		</div>
+	</body>
+</html>
