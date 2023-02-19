@@ -27,6 +27,7 @@
 		<% } %>
 	</div>
 	<aside id="kira-sidebar">
+		<%- partial('_widget/search') %>
 		<% theme.widgets.forEach(function(widget){%> <%- partial('_widget/' + widget) %> <% }) %>
 	</aside>
 	<div class="kira-copyright">
@@ -34,7 +35,6 @@
 		<a href="/"><%= config.author || config.title %></a
 		>
 		<%= __('Powered by') %> <a href="http://hexo.io/" target="_blank">Hexo</a> &
-		<!-- TODO: github 链接 -->
 		<a href="https://github.com/ch1ny/kira-hexo/" target="_blank">Kira-Hexo</a>
 		<br />
 		<% if (theme.beian) { %>

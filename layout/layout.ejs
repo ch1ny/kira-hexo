@@ -11,6 +11,8 @@
 		+='：' + page.year; } } else if (is_category()){ title=__('count.categories') + '：' +
 		page.category; } else if (is_tag()){ title=__('count.tags') + '：' + page.tag; } %>
 		<title><% if (title){ %> <%= title %> - <% } %> <%= config.title %></title>
+		<!-- 控制台打印 Kira Logo -->
+		<script src="/js/kira-console-logo.js"></script>
 		<link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
 		<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
 		<!-- lazyload -->
@@ -27,6 +29,12 @@
 			href="<%= theme.favicon.href %>"
 			type="<%= theme.favicon.type %>"
 		/>
+
+    <% if (theme.customStyles) { %>
+			<% theme.customStyles.forEach(function(customCss){ %>
+				<%- css_auto_version(customCss) %>
+			<% }) %>
+		<% } %>
 	</head>
 
 	<body>

@@ -11,7 +11,7 @@
 
     .kira-avatar {
         margin: 25px;
-        box-shadow: 0 0 2rem rgba($color1, 0.2);
+        box-shadow: 0 0 2rem rgba(hexo-config('color.first.r'), hexo-config('color.first.g'), hexo-config('color.first.b'), 0.2);
 
         a {
             padding-bottom: 100%;
@@ -190,6 +190,34 @@
                 position: absolute;
                 right: 18px;
                 top: 10px;
+            }
+        }
+
+        .kira-search {
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+
+            .kira-search-icon {
+                width: 1em;
+                height: 1em;
+                font-size: 1em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .kira-search-input {
+                margin-left: 6px;
+
+                input {
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    width: 100%;
+                }
             }
         }
 
