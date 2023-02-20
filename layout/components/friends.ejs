@@ -1,3 +1,4 @@
+<% if (Array.isArray(theme.friends)) { %>
 <%- css("css/kira-friends") %>
 <div style="display: flex; flex-wrap: wrap; width: 100%; position: relative;">
   <% theme.friends.forEach(friend => { %>
@@ -12,3 +13,4 @@
   <% }) %>
 </div>
 <hr />
+<% } %>
