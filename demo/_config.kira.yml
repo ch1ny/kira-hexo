@@ -130,3 +130,9 @@ sidebar: ''
 customStyles:
     - style
     - custom
+
+# 友链配置
+friends:
+    - avatar: https://www.jingtao.online/favicon.ico
+      link: https://www.jingtao.online
+      name: 景涛在线
