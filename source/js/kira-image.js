@@ -85,9 +85,9 @@ window.onload = () => {
 		nowImage.setAttribute('src', nowSrc);
 		nextImage.setAttribute('src', nextSrc);
 
-		modal.querySelector('.kira-image-header > .kira-image-counter').innerText = `${
-			index + 1
-		} / ${imgProps.length}`;
+		modal.querySelector('.kira-image-header > .kira-image-counter').innerText = `${index + 1} / ${
+			imgProps.length
+		}`;
 		modal.querySelector('.kira-image-header > .kira-image-title').innerText = `${nowAlt || ''}`;
 	};
 	/**
