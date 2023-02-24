@@ -7,23 +7,13 @@ favicon:
     href: https://assets.kira.host/Pictures/Others/116359b4ccf19917.jpg # 网站图标
     type: image/png # 图标类型，可能的值有(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
 
-# 附加图标库 使用说明：https://docs.kira.com/config/icon
+# 附加图标库 使用说明：https://hexo.kira.host/config/icon.html
 iconlib: //at.alicdn.com/t/font_3299330_el19bsi97h8.css
 
-search:
-    type: local # 可选engine（用搜索引擎搜索）、swiftype、或local（本地搜索）
-    url: https://cn.bing.com/search?q=site:kira.com # 搜索引擎地址，在type为swiftype时无效 e.g:https://www.google.com/search?q={你的博客链接}
-    id: <swiftype-id> # swiftype的id，见启用教程。在type为engine时无效
-
-cdn: # 这里可以修改站点使用的库的CDN
-    # disqusjs:
-    #     css: https://unpkg.com/disqusjs@1.2.5/dist/disqusjs.min.css
-    #     js: https://unpkg.com/disqusjs@1.2.5/dist/disqus.min.js
+cdn:
     gitalk:
         css: https://unpkg.com/gitalk@latest/dist/gitalk.css
         js: https://unpkg.com/gitalk@latest/dist/gitalk.min.js
-    # valine:
-    #     js: https://unpkg.com/valine
 
 beian: 赣ICP备2021007955号-3 # 备案号（选填）
 
@@ -45,9 +35,7 @@ widgets:
     - social
     - category
     - tagcloud
-# - archive #settings: widgetAchive
-# - recent_posts
-# - link #settings: widgetLink
+    - archive
 
 maxTagcloud: 0 # 标签云组件显示的标签数量，0 表示不限制
 
@@ -110,26 +98,13 @@ gitalk:
 copyright: '<strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可'
 copyTip: "著作权归作者所有。\n商业转载请联系作者获得授权，非商业转载请注明出处。\n来源：%url" # 自定义复制版权文案,使用 %url 代替当前页面URL, 修改为false禁用
 
-# archive widget behavior
-widgetArchive: #文章归档组件
-    archive_type: 'year' #按月展示还是按年展示
-    show_count: true #是否展示数量
-
-widgetLink: #链接组件
-    - title: <title>
-      img: <img_path>
-      link: <url>
-    - title: <title>
-      img: <img_path>
-      link: <url>
-
 # 自定义侧边栏尾部内容
 sidebar: ''
 
 # 自定义样式
-customStyles:
-    - style
-    - custom
+# customStyles:
+#     - style
+#     - custom
 
 # 友链配置
 friends:
