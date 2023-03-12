@@ -38,43 +38,6 @@ article {
 			border-radius: 0;
 			font-size: 100%;
 			font-family: Consolas;
-
-			&::after {
-				color: #5c6370;
-				position: absolute;
-				top: 0.5em;
-				bottom: 0.5em;
-				left: 0;
-				text-align: left;
-				clip: rect(-100px 2em 9999px 0);
-				clip: rect(-100px 5ch 9999px 0);
-				overflow: hidden;
-				padding: 1px 0;
-				padding-left: 12px;
-				background: #282c34;
-			}
-		}
-	}
-
-	pre {
-		&::before {
-			background: #282c34;
-			height: 32px;
-			margin-bottom: 0;
-			display: block;
-		}
-
-		&::after {
-			position: absolute;
-			border-radius: 50%;
-			background: #ff5f56;
-			width: 12px;
-			height: 12px;
-			top: 0;
-			left: 12px;
-			margin-top: 12px;
-			-webkit-box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
-			box-shadow: 20px 0 #ffbd2e, 40px 0 #27c93f;
 		}
 	}
 
@@ -99,13 +62,13 @@ article {
 		&.CodePenLink {
 			transition: 0.2s;
 			padding: 0.2em;
-			color: rgb(49, 174, 255);
-			border-bottom: 1px solid rgba(49, 174, 255, 0.5);
+			color: $color1;
+			border-bottom: 1px solid $krdbgc1;
 
 			&:hover {
-				text-shadow: 0px 0px 5px rgba(49, 174, 255, 0.4);
+				text-shadow: 0px 0px 5px $krlbgc1;
 				text-decoration: none;
-				border-bottom: 1px solid rgb(49, 174, 255);
+				border-bottom: 1px solid $color1;
 			}
 		}
 	}
@@ -118,6 +81,20 @@ article {
 			content: '';
 			clear: both;
 			display: block;
+		}
+
+		& > code {
+			display: inline;
+			border-radius: 4px;
+			font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace, Roboto,
+				RobotoNum, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica,
+				Arial, sans-serif, 'Segoe UI';
+			padding: 0 4px;
+			margin: 1px 3px;
+			line-height: 1.1;
+			word-break: break-all;
+			color: $color1;
+			background-color: $krlbgc1;
 		}
 	}
 
@@ -567,20 +544,6 @@ details {
 				background: #f8f8f8 !important;
 			}
 		}
-	}
-
-	& > p > code {
-		display: inline;
-		border-radius: 4px;
-		font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace, Roboto,
-			RobotoNum, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica,
-			Arial, sans-serif, 'Segoe UI';
-		padding: 0 4px;
-		margin: 1px 3px;
-		line-height: 1.1;
-		word-break: break-all;
-		color: $color1;
-		background-color: $krlbgc1;
 	}
 
 	div.my-aplayer-container {
