@@ -1,6 +1,6 @@
 # Kira-Hexo
 
-[![npm version](https://badgen.net/npm/v/hexo-theme-kira)](https://www.npmjs.com/package/hexo-theme-kira) [![npm weekly download](https://badgen.net/npm/dw/hexo-theme-kira)](https://www.npmjs.com/package/hexo-theme-kira) [![github stars](https://badgen.net/github/stars/ch1ny/kira-hexo)](https://github.com/ch1ny/kira-hexo/stargazers)
+[![npm version](https://badgen.net/npm/v/hexo-theme-kira)](https://www.npmjs.com/package/hexo-theme-kira) [![npm weekly download](https://badgen.net/npm/dw/hexo-theme-kira)](https://www.npmjs.com/package/hexo-theme-kira) [![github stars](https://badgen.net/github/stars/ch1ny/kira-hexo?color=orange)](https://github.com/ch1ny/kira-hexo/stargazers)
 
 Kira-Hexo，或者你也可以叫它 hexo-theme-kira。正如它的名字一样，是一款 KiraKira ✨ 让人眼前一亮的 hexo 风格化主题。
 
