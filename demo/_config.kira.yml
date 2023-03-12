@@ -21,14 +21,14 @@ menu:
     回到首页:
         - /
         - icon-home
-    文章归档: # 使用说明：https://docs.kira.com/article/archive
+    文章归档:
         - /archive.html
         - icon-container
     关于本人:
         - /about.html
         - icon-user
     我的朋友:
-        - /friends.html # 使用说明：https://docs.kira.com/article/py
+        - /friends.html
         - icon-team
 
 widgets:

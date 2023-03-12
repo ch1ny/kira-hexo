@@ -22,6 +22,10 @@
 		<script src="//unpkg.com/@highlightjs/cdn-assets@11.6.0/highlight.min.js"></script>
 		<!-- 预置 kiraicon -->
 		<link rel="stylesheet" href="/lib/iconfont/iconfont.css" crossorigin />
+		<% if (theme.iconlib) { %>
+			<link rel="stylesheet" href="<%= theme.iconlib %>" crossorigin />
+		<% } %>
+		<link rel="stylesheet" href="/lib/iconfont/iconfont.css" crossorigin />
 		<link
 			rel="shortcut icon"
 			href="<%= theme.favicon.href %>"
