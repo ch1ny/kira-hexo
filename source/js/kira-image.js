@@ -1,10 +1,17 @@
 window.onload = () => {
+	// 定义阻止默认事件函数
+	const preventDefault = (ev) => {
+		ev.preventDefault();
+	};
+
 	/**
 	 * 1. 先获取需要展示的 img DOM
 	 */
 	const articleImageDoms = Array.from(
-		document.querySelectorAll('div.kira-content > div.kira-main-content article img')
-	).slice(1);
+		document.querySelectorAll(
+			'div.kira-content > div.kira-main-content article img:not(.disabled-kira-image)'
+		)
+	);
 	const modal = document.querySelector('.kira-image > .kira-image-modal');
 	const nowImage = modal.querySelector('.kira-image-now > img');
 	const prevImage = modal.querySelector('.kira-image-prev > img');
@@ -99,7 +106,9 @@ window.onload = () => {
 	};
 	const onClose = () => {
 		modal.classList.remove('visible');
-		document.querySelector('body').style.overflow = 'auto';
+		// 恢复页面滚动
+		modal.removeEventListener('mousewheel', preventDefault);
+		modal.removeEventListener('touchmove', preventDefault);
 		modal.removeEventListener('click', onVisibleModalClick);
 	};
 	modal
@@ -116,7 +125,10 @@ window.onload = () => {
 		setImageProp();
 		modal.classList.add('visible');
 		modal.addEventListener('click', onVisibleModalClick);
-		document.querySelector('body').style.overflow = 'hidden';
+		// 阻止页面滚动
+		modal.addEventListener('mousewheel', preventDefault, { passive: false });
+		// 阻止移动端页面滚动
+		modal.addEventListener('touchmove', preventDefault, { passive: false });
 	};
 	/**
 	 * 7. 定义切换图片函数
