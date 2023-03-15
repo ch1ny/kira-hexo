@@ -16,4 +16,4 @@ Kira-Hexo，或者你也可以叫它 hexo-theme-kira。正如它的名字一样�
 
 ## Credits
 
-> **声明**: 本仓库设计灵感来源于 [hexo-theme-nexmoe](https://github.com/theme-nexmoe/hexo-theme-nexmoe)，欢迎各位支持一下原作者。
+> **声明**: 本仓库设计灵感来源于 [hexo-theme-nexmoe](https://github.com/theme-nexmoe/hexo-theme-nexmoe)，欢迎各位支持原作者。

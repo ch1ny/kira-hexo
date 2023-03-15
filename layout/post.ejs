@@ -79,6 +79,9 @@
 			}) %>
 		<% } %>
 	</div>
+	<% if (theme.copyableCodeblock) { %>
+		<script src="/js/kira-code-copy.js"></script>
+	<% } %>
 	<% if (page.comments){ %>
 	<div class="kira-post-footer"><%- partial('components/gitalk') %></div>
 	<% } %>
