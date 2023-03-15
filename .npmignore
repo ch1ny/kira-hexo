@@ -9,3 +9,4 @@ _multiconfig.yml
 demo/
 *.lock
 preview.png
+.github/

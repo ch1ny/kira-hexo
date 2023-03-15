@@ -7,7 +7,7 @@
 		"build": "hexo generate",
 		"clean": "hexo clean",
 		"dev": "hexo server",
-		"yalc": "yalc remove hexo-theme-kira&&yalc add hexo-theme-kira&&yarn"
+		"yalc": "yalc remove hexo-theme-kira&&yarn clean&&yalc add hexo-theme-kira&&yarn"
 	},
 	"hexo": {
 		"version": "6.3.0"

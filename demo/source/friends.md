@@ -3,7 +3,7 @@ title: 我的朋友
 layout: friends
 ---
 
-{% myplayer %}
+{% krplayer %}
 {% aplayerlrc "You are a ghost, I am a ghost 〜劇場のゴースト〜" "スタァライト九九組" "https://assets.kira.host/Audios/YouGhostIGhost.mp3" "https://p3.music.126.net/7DUwlk6F0Lfj9TgL36yNfA==/109951163778883762.jpg?param=90y90" %}
 [00:00.000]作词 : 中村彼方
 [00:01.000]作曲 : 叶人 / 藤井亮太
@@ -70,7 +70,7 @@ layout: friends
 [04:06.845]埃の焼ける匂いが私の糧 (舞台灯光灼烧灰尘的气味是我的食粮)
 [04:09.530]スポットライトの光だけが 私の存在をあぶりだす (只有聚光灯的闪耀 才能彰显我的存在)
 {% endaplayerlrc %}
-{% endmyplayer %}
+{% endkrplayer %}
 
 <hr />
 
