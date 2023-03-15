@@ -111,3 +111,6 @@ friends:
     - avatar: https://www.jingtao.online/favicon.ico
       link: https://www.jingtao.online
       name: 景涛在线
+
+# 可复制的代码块
+copyableCodeblock: true
