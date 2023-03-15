@@ -6,7 +6,7 @@ categories: [Revue]
 cover: https://assets.kira.host/Pictures/Others/Star_Divine.jpg
 ---
 
-{% myplayer %}
+{% krplayer %}
 {% aplayerlrc "-Star Divine- フィナーレ" "小山百代 / 三森铃子 / 富田麻帆 / 相羽あいな" "https://assets.kira.host/Audios/M5000001Bif12b4u3H.mp3" "https://assets.kira.host/Pictures/Others/Star_Divine.jpg" %}
 [00:00.550]-Star Divine- フィナーレ (《少女 ☆ 歌剧 Revue Starlight》TV 动画第 10 集插曲) - 小山百代/三森すずこ (三森铃子)/富田麻帆/相羽あいな
 [00:02.600]词：中村彼方
@@ -60,7 +60,7 @@ cover: https://assets.kira.host/Pictures/Others/Star_Divine.jpg
 [03:34.550]舞台に生かされている (舞台赋予了我们生存的意义)
 [03:40.570]切っ先に栄光止まれ (让荣光落于刀锋之上)
 {% endaplayerlrc %}
-{% endmyplayer %}
+{% endkrplayer %}
 
 <!-- more -->
 <h1 style="color: gold;">-Star Divine- フィナーレ</h1>

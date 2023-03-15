@@ -3,7 +3,7 @@ title: 关于本人
 layout: about
 ---
 
-{% myplayer %}
+{% krplayer %}
 {% aplayerlrc "桜花千爛 -オープニング-" "橋本みゆき" "https://assets.kira.host/Audios/樱花千烂.mp3" "https://p3.music.126.net/vzOncWIreOhP44GpaTcDmg==/109951166875303449.jpg?param=90y90" %}
 [00:00.000]作词 : 石川泰
 [00:00.040]作曲 : 山口卓也
@@ -73,7 +73,7 @@ layout: about
 [04:16.440]わたしのこと (以及我对你的恋心)
 [04:20.140]
 {% endaplayerlrc %}
-{% endmyplayer %}
+{% endkrplayer %}
 
 ## 自我介绍
 

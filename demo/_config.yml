@@ -105,10 +105,6 @@ deploy:
     - type: git
       repo: https://github.com/ch1ny/ch1ny.github.io
 
-aplayer:
-    meting: true
-    asset_inject: false
-
 # SEO
 sitemap:
     path: sitemap.xml

@@ -8,7 +8,9 @@ coverWidth: 400
 coverHeight: 400
 ---
 
-{% myplayer %}
+{% meting "60198" "netease" "playlist" "autoplay" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86"%}
+
+{% krplayer %}
 {% aplayerlrc "Eutopia" "钟岚珠（法元明菜）" "https://assets.kira.host/Audios/565807693_nb2-1-112.mp3" "https://assets.kira.host/Pictures/Others/Eutopia_AS.jpg" %}
 [00:00.50] 鐘嵐珠（法元明菜） - Eutopia
 [00:01.00]作词：Ayaka Miyake
@@ -46,7 +48,7 @@ coverHeight: 400
 [01:51.70] Top of the top!
 [01:54.95]『怎样 不错吧？ Huh?』
 {% endaplayerlrc %}
-{% endmyplayer %}
+{% endkrplayer %}
 
 <!-- more -->
 <div style="color: #F69992; font-size: 1.25rem;">

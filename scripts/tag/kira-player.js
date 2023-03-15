@@ -1,9 +1,9 @@
 'use strict';
 
 hexo.extend.tag.register(
-	'myplayer',
+	'krplayer',
 	function (args, content) {
-		return `<div class="my-aplayer-container">${content}</div>`;
+		return `<div class="kira-aplayer-container">${content}</div>`;
 	},
 	{ ends: true }
 );

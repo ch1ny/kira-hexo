@@ -6,7 +6,7 @@ categories: [Revue]
 cover: https://p2.music.126.net/YpbmjrfGLRTAqAf6O-KtMQ==/109951163435314394.jpg
 ---
 
-{% myplayer %}
+{% krplayer %}
 {% aplayerlrc "Fly Me To The Star" "小山百代/三森すずこ" "https://assets.kira.host/Audios/FlyMetotheStar.mp3" "https://p2.music.126.net/YpbmjrfGLRTAqAf6O-KtMQ==/109951163435314394.jpg" %}
 [00:00.000]作词 : 中村彼方
 [00:01.000]作曲 : 寻木ヒロ
@@ -34,7 +34,7 @@ cover: https://p2.music.126.net/YpbmjrfGLRTAqAf6O-KtMQ==/109951163435314394.jpg
 [02:59.360]【合】連れてって (请带上我)
 [03:01.730]【合】oh, fly me to the star
 {% endaplayerlrc %}
-{% endmyplayer %}
+{% endkrplayer %}
 
 <!-- more -->
 <h1 style="color: #3E58AC;">Fly Me To The Star</h1>
