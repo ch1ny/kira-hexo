@@ -1,4 +1,4 @@
-window.onload = () => {
+window.addEventListener('load', () => {
 	// 定义阻止默认事件函数
 	const preventDefault = (ev) => {
 		ev.preventDefault();
@@ -12,6 +12,7 @@ window.onload = () => {
 			'div.kira-content > div.kira-main-content article img:not(.disabled-kira-image)'
 		)
 	);
+
 	const modal = document.querySelector('.kira-image > .kira-image-modal');
 	const nowImage = modal.querySelector('.kira-image-now > img');
 	const prevImage = modal.querySelector('.kira-image-prev > img');
@@ -174,4 +175,4 @@ window.onload = () => {
 			onKiraImagesClick(index);
 		});
 	});
-};
+});
