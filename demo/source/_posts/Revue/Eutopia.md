@@ -8,7 +8,7 @@ coverWidth: 400
 coverHeight: 400
 ---
 
-{% meting "60198" "netease" "playlist" "autoplay" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86"%}
+<!-- {% meting "60198" "netease" "playlist" "autoplay" "mutex:false" "listmaxheight:340px" "preload:none" "theme:#ad7a86"%} -->
 
 {% krplayer %}
 {% aplayerlrc "Eutopia" "钟岚珠（法元明菜）" "https://assets.kira.host/Audios/565807693_nb2-1-112.mp3" "https://assets.kira.host/Pictures/Others/Eutopia_AS.jpg" %}

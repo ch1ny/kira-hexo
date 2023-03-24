@@ -32,11 +32,14 @@
             </a>
 
             <div class="kira-post-meta kira-rainbow">
-                <a
-                    ><i class="kirafont icon-calendar-fill"></i><%- date(page.date, "YYYY年MM月DD日")
-                    %></a
-                >
-                <a><i class="kirafont icon-areachart"></i><%= wordcount(page.content) %> 字</a>
+                <a>
+                    <i class="kirafont icon-calendar-fill"></i>
+                    <%- date(page.date, "YYYY年MM月DD日") %>
+                </a>
+                <a>
+                    <i class="kirafont icon-edit-fill"></i>
+                    <%= wordcount(page.content) %> 字
+                </a>
                 <a>
                     <i class="kirafont icon-time-circle-fill"></i>大概
                     <%= min2read(page.content, {cn: 250, en: 160}) %> 分钟

@@ -20,30 +20,47 @@
 			title="<%= name %>"
 		>
 			<i
-				class="kirafont <% if (theme.menu[name][1]){ %><%= theme.menu[name][1] %><%} else{ %><%= 'icon-unorderedlist' %><% } %>"
+				class="kirafont
+					<% if (theme.menu[name][1]) { %>
+						<%= theme.menu[name][1] %>
+					<% } else { %>
+						<%= 'icon-unordered-list' %>
+					<% } %>"
 			></i>
-			<div class="kira-list-item-content"><%= name %></div>
+			<div class="kira-list-item-content">
+				<%= name %>
+			</div>
 		</a>
 		<% } %>
 	</div>
 	<aside id="kira-sidebar">
-		<% theme.widgets.forEach(function(widget){%> <%- partial('_widget/' + widget) %> <% }) %>
+		<% theme.widgets.forEach(function(widget) {%>
+			<%- partial('_widget/' + widget) %>
+		<% }) %>
 	</aside>
 	<div class="kira-copyright">
 		&copy; <%= date(new Date(), 'YYYY') %>
-		<a href="/"><%= config.author || config.title %></a
-		>
+		<a href="/"><%= config.author || config.title %></a>
 		<%= __('Powered by') %> <a href="http://hexo.io/" target="_blank">Hexo</a> &
-		<!-- TODO: github 链接 -->
 		<a href="https://github.com/ch1ny/kira-hexo/" target="_blank">Kira-Hexo</a>
 		<br />
 		<% if (theme.beian) { %>
-			<a href="https://beian.miit.gov.cn/" target="_blank"><%= theme.beian %></a>
+			<a
+				href="https://beian.miit.gov.cn/"
+				target="_blank"
+				onclick="navigator.clipboard.writeText(`${<%= theme.beian %>}`)"
+			>
+				<%= theme.beian %>
+			</a>
 		<% } %>
 		<%- theme.sidebar %>
 	</div>
 </div>
-<div class="kira-sidebar-modal" id="sidebar-modal" onclick="(function(self) {
-	self.classList.remove('show');
-	document.querySelector('.kira-sidebar.show#sidebar').classList.remove('show');
-})(this)"></div>
+<div
+	class="kira-sidebar-modal"
+	id="sidebar-modal"
+	onclick="(function(self) {
+		self.classList.remove('show');
+		document.querySelector('.kira-sidebar.show#sidebar').classList.remove('show');
+	})(this)"
+></div>

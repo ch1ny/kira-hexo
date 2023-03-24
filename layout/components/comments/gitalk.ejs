@@ -3,7 +3,7 @@
 	<div id="gitalk"></div>
 	<script src="<%- theme.cdn.gitalk.js %>"></script>
 	<script type="text/javascript">
-		var gitalk = new Gitalk({
+		const gitalk = new Gitalk({
 			clientID: '<%= theme.gitalk.clientID %>',
 			clientSecret: '<%= theme.gitalk.clientSecret %>',
 			id: '<%=page.title%>',

@@ -5,7 +5,8 @@
 	</article>
 	<% if (page.comments) { %>
         <div class="kira-post-footer">
-            <%- partial('components/gitalk') %>
+            <%- partial('components/comments/gitalk') %>
+            <%- partial('components/comments/giscus') %>
         </div>
     <% } %>
 </div>

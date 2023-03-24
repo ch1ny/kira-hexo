@@ -1,8 +1,10 @@
-<% if (site.posts.length){ %>
-<div class="kira-widget-wrap">
-	<h3 class="kira-widget-title"><%= __('archive') %></h3>
-	<div class="kira-widget">
-		<%- list_archives({show_count: true, type: 'year'}) %>
+<% if (site.posts.length) { %>
+	<div class="kira-widget-wrap">
+		<h3 class="kira-widget-title">
+			<%= __('archive') %>
+		</h3>
+		<div class="kira-widget">
+			<%- list_archives({show_count: true, type: 'year'}) %>
+		</div>
 	</div>
-</div>
 <% } %>
