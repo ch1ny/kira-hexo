@@ -36,8 +36,7 @@
 				<%- css(customCss) %>
 			<% }) %>
 		<% } %>
-		<script src="<%- config.root %>/deps/js/APlayer.min.js"></script>
-		<script src="<%- config.root %>/deps/js/Meting.min.js"></script>
+		<%- js(["deps/js/APlayer.min", "deps/js/Meting.min"]) %>
 	</head>
 
 	<body>

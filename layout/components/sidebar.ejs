@@ -40,7 +40,7 @@
 	</aside>
 	<div class="kira-copyright">
 		&copy; <%= date(new Date(), 'YYYY') %>
-		<a href="/"><%= config.author || config.title %></a>
+		<a href="<%- url_for('/') %>"><%= config.author || config.title %></a>
 		<%= __('Powered by') %> <a href="http://hexo.io/" target="_blank">Hexo</a> &
 		<a href="https://github.com/ch1ny/kira-hexo/" target="_blank">Kira-Hexo</a>
 		<br />
@@ -48,7 +48,6 @@
 			<a
 				href="https://beian.miit.gov.cn/"
 				target="_blank"
-				onclick="navigator.clipboard.writeText(`${<%= theme.beian %>}`)"
 			>
 				<%= theme.beian %>
 			</a>
