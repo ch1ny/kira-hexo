@@ -6,6 +6,62 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "4767060",
+      "name": "unordered list",
+      "font_class": "unordered-list",
+      "unicode": "e7f5",
+      "unicode_decimal": 59381
+    },
+    {
+      "icon_id": "4766297",
+      "name": "area chart",
+      "font_class": "area-chart-fill",
+      "unicode": "e7af",
+      "unicode_decimal": 59311
+    },
+    {
+      "icon_id": "4936512",
+      "name": "time-circle-fill",
+      "font_class": "time-circle-fill",
+      "unicode": "e848",
+      "unicode_decimal": 59464
+    },
+    {
+      "icon_id": "4936544",
+      "name": "calendar-fill",
+      "font_class": "calendar-fill",
+      "unicode": "e84d",
+      "unicode_decimal": 59469
+    },
+    {
+      "icon_id": "4936627",
+      "name": "container-fill",
+      "font_class": "container-fill",
+      "unicode": "e85f",
+      "unicode_decimal": 59487
+    },
+    {
+      "icon_id": "4936679",
+      "name": "edit-fill",
+      "font_class": "edit-fill",
+      "unicode": "e86d",
+      "unicode_decimal": 59501
+    },
+    {
+      "icon_id": "4936683",
+      "name": "tag-fill",
+      "font_class": "tag-fill",
+      "unicode": "e86e",
+      "unicode_decimal": 59502
+    },
+    {
+      "icon_id": "577365",
+      "name": "搜索",
+      "font_class": "search",
+      "unicode": "e752",
+      "unicode_decimal": 59218
+    },
+    {
       "icon_id": "4118038",
       "name": "关闭",
       "font_class": "close",

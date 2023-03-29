@@ -1,5 +1,4 @@
 <section class="kira-archives">
-    
     <div class="tagcloud kira-rainbow">
         <%- list_tags({
             show_count: true,
@@ -8,24 +7,20 @@
             separator: ""
         }) %>
     </div>
-
     <div class="categories kira-rainbow-fill">
-        <% site.categories.sort('name').map(function(category){  %>
+        <% site.categories.sort('name').map(function(category) { %>
             <% let coverx = "" %>
-            <% category.posts.sort('-date').map(function(post){  %>
-                
-                <% if(post.cover!==undefined && coverx==""){ %> 
+            <% category.posts.sort('-date').map(function(post) {  %>
+                <% if (post.cover !== undefined && coverx === "") { %> 
                     <% coverx = post.cover %> 
                 <% } %>
             <% }) %>
-
             <a class="mdui-ripple" href="<%- url_for(category.path) %>">
                 <div class="bg" style="background-image:url('<%= coverx %>')"></div>
                 <h1><%= category.name %></h1>
             </a>
         <% }) %>
     </div>
-    
     <article>
         <% function buildArchive(posts, year) { %>
             <h2><%= year %></h2>
@@ -35,7 +30,6 @@
             <% }) %>
             </ul>
         <% } %>
-
         <%
         if (!page.year) {
             let years = {};

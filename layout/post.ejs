@@ -27,7 +27,7 @@
 		<% } %>
 		<div class="kira-post-meta kira-rainbow" style="margin:10px 0!important;">
 			<a><i class="kirafont icon-calendar-fill"></i><%- date(page.date, "YYYY年MM月DD日") %></a>
-			<a><i class="kirafont icon-areachart"></i><%= wordcount(page.content) %> 字</a>
+			<a><i class="kirafont icon-edit-fill"></i><%= wordcount(page.content) %> 字</a>
 			<a><i class="kirafont icon-time-circle-fill"></i>大概 <%= min2read(page.content, {cn: 250, en: 160}) %> 分钟</a>
 		</div>
 		<%- image_auto_lazyload(page.content) %>
@@ -65,7 +65,7 @@
 		<% if (page.categories && page.categories.length){ %>
 			<%- list_categories(page.categories, {
 				show_count: false,
-				class: 'kirafont icon-appstore-fill ',
+				class: 'kirafont icon-container-fill ',
 				style: 'none',
 				separator: ''
 			}) %>
@@ -83,6 +83,9 @@
 		<script src="/js/kira-code-copy.js"></script>
 	<% } %>
 	<% if (page.comments){ %>
-	<div class="kira-post-footer"><%- partial('components/gitalk') %></div>
+	<div class="kira-post-footer">
+		<%- partial('components/comments/gitalk') %>
+		<%- partial('components/comments/giscus') %>
+	</div>
 	<% } %>
 </div>
