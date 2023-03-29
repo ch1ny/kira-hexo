@@ -8,7 +8,7 @@ favicon:
     type: image/png # 图标类型，可能的值有(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
 
 # 附加图标库 使用说明：https://hexo.kira.host/config/icon.html
-iconlib: //at.alicdn.com/t/font_3299330_el19bsi97h8.css
+# iconlib: //at.alicdn.com/t/font_3299330_el19bsi97h8.css
 
 cdn:
     gitalk:

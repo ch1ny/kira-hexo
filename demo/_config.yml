@@ -14,6 +14,7 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://kira.host/
+root: /blog/
 permalink: :title/
 permalink_defaults:
 pretty_urls:
@@ -108,3 +109,6 @@ deploy:
 # SEO
 sitemap:
     path: sitemap.xml
+
+aplayer:
+    asset_inject: false
