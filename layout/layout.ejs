@@ -11,15 +11,17 @@
 		+='：' + page.year; } } else if (is_category()){ title=__('count.categories') + '：' +
 		page.category; } else if (is_tag()){ title=__('count.tags') + '：' + page.tag; } %>
 		<title><% if (title){ %> <%= title %> - <% } %> <%= config.title %></title>
-		<link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" />
-		<script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+		<!-- <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css" /> -->
+		<!-- <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script> -->
+		<%- css("lib/mdui/mdui.min") %>
+		<%- js("lib/mdui/mdui.min") %>
 		<!-- lazyload -->
-		<script src="https://unpkg.com/lazysizes@5.1.0/lazysizes.min.js"></script>
+		<%- js("lib/lazysizes") %>
 		<!-- smooth-scrolling -->
-		<script src="https://unpkg.com/smooth-scrolling.js@1.0.0"></script>
+		<%- js("lib/smooth-scrolling") %>
 		<!-- highlight -->
-		<link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.6.0/styles/atom-one-dark.min.css" />
-		<script src="//unpkg.com/@highlightjs/cdn-assets@11.6.0/highlight.min.js"></script>
+		<%- css("lib/highlight/atom-one-dark.min") %>
+		<%- js("lib/highlight/highlight.min") %>
 		<!-- 预置 kiraicon -->
 		<%- css("lib/iconfont/iconfont") %>
 		<% if (theme.iconlib) { %>
