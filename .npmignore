@@ -10,3 +10,4 @@ demo/
 *.lock
 preview.png
 .github/
+pnpm-lock.yaml
