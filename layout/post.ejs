@@ -80,7 +80,7 @@
 		<% } %>
 	</div>
 	<% if (theme.copyableCodeblock) { %>
-		<script src="/js/kira-code-copy.js"></script>
+		<%- js('js/kira-code-copy') %>
 	<% } %>
 	<% if (page.comments){ %>
 	<div class="kira-post-footer">
