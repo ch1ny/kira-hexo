@@ -34,7 +34,7 @@ cover: https://wayou.gallerycdn.vsassets.io/extensions/wayou/vscode-todo-highlig
 今天我就来推荐一款 VSCode 可用的插件——TODO Highlight 。
 _安装插件的方法就不用我来介绍了吧_
 安装好插件后，来到你的项目代码中，试试看写一段 TODO 标记吧！
-![默认样式](https://assets.kira.host/Pictures/Others/20220409143727.png)
+![默认样式](https://kira.host/assets/Pictures/Others/20220409143727.png)
 这就是 TODO Highlight 的默认样式，它会自动匹配代码中的 `TODO:` 和 `FIXME:` ，并显示不同的颜色。
 
 # 自定义关键字及样式
@@ -113,4 +113,4 @@ _安装插件的方法就不用我来介绍了吧_
 // DEBUG: 下面的代码是调试用的，调试完了记得删除
 ```
 
-![自定义样式](https://assets.kira.host/Pictures/Others/20220409150024.png)
+![自定义样式](https://kira.host/assets/Pictures/Others/20220409150024.png)

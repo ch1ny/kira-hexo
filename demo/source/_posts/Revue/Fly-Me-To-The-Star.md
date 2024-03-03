@@ -7,7 +7,7 @@ cover: https://p2.music.126.net/YpbmjrfGLRTAqAf6O-KtMQ==/109951163435314394.jpg
 ---
 
 {% krplayer %}
-{% aplayerlrc "Fly Me To The Star" "小山百代/三森すずこ" "https://assets.kira.host/Audios/FlyMetotheStar.mp3" "https://p2.music.126.net/YpbmjrfGLRTAqAf6O-KtMQ==/109951163435314394.jpg" %}
+{% aplayerlrc "Fly Me To The Star" "小山百代/三森すずこ" "https://kira.host/assets/Audios/FlyMetotheStar.mp3" "https://p2.music.126.net/YpbmjrfGLRTAqAf6O-KtMQ==/109951163435314394.jpg" %}
 [00:00.000]作词 : 中村彼方
 [00:01.000]作曲 : 寻木ヒロ
 [00:02.000]编曲 : 寻木ヒロ、小高光太郎

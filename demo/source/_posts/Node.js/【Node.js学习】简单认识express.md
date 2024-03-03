@@ -107,7 +107,7 @@ app.post('/user', (req, resp) => {
 ```
 
 我们通过 URL 向服务器发送一条 GET 请求，下面是服务器的返回结果：
-![输出样例](https://assets.kira.host/Pictures/Others/20220404223433.png)
+![输出样例](https://kira.host/assets/Pictures/Others/20220404223433.png)
 
 创建上述一个 Web 服务器的完整代码如下：
 
