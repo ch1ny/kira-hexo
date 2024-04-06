@@ -4,7 +4,7 @@ layout: about
 ---
 
 {% krplayer %}
-{% aplayerlrc "桜花千爛 -オープニング-" "橋本みゆき" "https://assets.kira.host/Audios/樱花千烂.mp3" "https://p3.music.126.net/vzOncWIreOhP44GpaTcDmg==/109951166875303449.jpg?param=90y90" %}
+{% aplayerlrc "桜花千爛 -オープニング-" "橋本みゆき" "https://kira.host/assets/Audios/樱花千烂.mp3" "https://p3.music.126.net/vzOncWIreOhP44GpaTcDmg==/109951166875303449.jpg?param=90y90" %}
 [00:00.000]作词 : 石川泰
 [00:00.040]作曲 : 山口卓也
 [00:00.800]はらはらと　舞い落ちる　桜 (樱花落英缤纷 飞舞飘落)

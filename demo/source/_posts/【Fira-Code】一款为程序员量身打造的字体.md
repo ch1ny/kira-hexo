@@ -3,7 +3,7 @@ title: 【Fira Code】一款为程序员量身打造的字体
 date: 2022-09-18 12:17:22
 tags: [VSCODE]
 categories: [编程]
-cover: https://assets.kira.host/Pictures/Others/FiraCodeLogo.svg
+cover: https://kira.host/assets/Pictures/Others/FiraCodeLogo.svg
 ---
 
 今天给大家介绍一款非常炫酷的等宽字体—— **Fira Code**。
@@ -42,7 +42,7 @@ func(arr);
 
 ```
 下面是这段代码在 VSCode 中的效果图：
-![TypeScript Fira Code 预览](https://assets.kira.host/Pictures/Others/20220918125944.png)
+![TypeScript Fira Code 预览](https://kira.host/assets/Pictures/Others/20220918125944.png)
 
 # 如何使用 Fira Code
 
@@ -51,12 +51,12 @@ func(arr);
 ## 下载字体
 
 首先，我们进入到 [Fira Code 官方仓库](https://github.com/tonsky/FiraCode) 中，找到 Releases，点击进入[最新的一次发布](https://github.com/tonsky/FiraCode/releases/latest)。
-![FiraCode官方仓库](https://assets.kira.host/Pictures/Others/20220918123410.png)
+![FiraCode官方仓库](https://kira.host/assets/Pictures/Others/20220918123410.png)
 
 ## 安装字体
 
 下载最新发布的 **Assets** 中的 **Fira_Code_v\*.\*.zip** ，这个是字体的压缩包。下载下来解压后，我们进入到其中的 `ttf` 文件夹，我们右键选中所有字体然后右键点击**安装**。
-![安装字体](https://assets.kira.host/Pictures/Others/20220918124037.png)
+![安装字体](https://kira.host/assets/Pictures/Others/20220918124037.png)
 
 ## 设置字体
 

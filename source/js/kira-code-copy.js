@@ -1,11 +1,6 @@
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
 	const codeBlocks = document.querySelectorAll('figure.highlight');
 	if (!codeBlocks.length) return;
-
-	const style = document.createElement('link');
-	style.rel = 'stylesheet';
-	style.href = '/css/kira-code-copy.css';
-	document.head.appendChild(style);
 
 	const addCopyButton = function (codeBlock) {
 		const copyWrapper = document.createElement('div');

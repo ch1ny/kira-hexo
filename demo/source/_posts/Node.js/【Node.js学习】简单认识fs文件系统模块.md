@@ -55,11 +55,11 @@ fs.readFile('./text.txt', 'utf8', function (err, data) {
 });
 ```
 
-![执行结果](https://assets.kira.host/Pictures/Others/20220402212450.png)
+![执行结果](https://kira.host/assets/Pictures/Others/20220402212450.png)
 
 也就是当文件读取成功时，`err`的值为`null`，而`data`则是读取的内容
 那么此时我们将原本的文本文件删除，让我们尝试读取的文件并不存在，会发生什么呢？
-![执行结果](https://assets.kira.host/Pictures/Others/20220402212716.png)
+![执行结果](https://kira.host/assets/Pictures/Others/20220402212716.png)
 可以看到，当发生错误时，`err`值为一个保存了错误信息的对象，`data`的值为`undefined`。
 
 ### 判断文件是否读取成功

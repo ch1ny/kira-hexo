@@ -4,7 +4,7 @@ layout: friends
 ---
 
 {% krplayer %}
-{% aplayerlrc "You are a ghost, I am a ghost 〜劇場のゴースト〜" "スタァライト九九組" "https://assets.kira.host/Audios/YouGhostIGhost.mp3" "https://p3.music.126.net/7DUwlk6F0Lfj9TgL36yNfA==/109951163778883762.jpg?param=90y90" %}
+{% aplayerlrc "You are a ghost, I am a ghost 〜劇場のゴースト〜" "スタァライト九九組" "https://kira.host/assets/Audios/YouGhostIGhost.mp3" "https://p3.music.126.net/7DUwlk6F0Lfj9TgL36yNfA==/109951163778883762.jpg?param=90y90" %}
 [00:00.000]作词 : 中村彼方
 [00:01.000]作曲 : 叶人 / 藤井亮太
 [00:06.671]

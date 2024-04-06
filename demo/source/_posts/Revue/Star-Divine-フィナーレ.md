@@ -3,11 +3,11 @@ title: Star Divine フィナーレ
 date: 2021-09-25 12:12:17
 tags: [Revue]
 categories: [Revue]
-cover: https://assets.kira.host/Pictures/Others/Star_Divine.jpg
+cover: https://kira.host/assets/Pictures/Others/Star_Divine.jpg
 ---
 
 {% krplayer %}
-{% aplayerlrc "-Star Divine- フィナーレ" "小山百代 / 三森铃子 / 富田麻帆 / 相羽あいな" "https://assets.kira.host/Audios/M5000001Bif12b4u3H.mp3" "https://assets.kira.host/Pictures/Others/Star_Divine.jpg" %}
+{% aplayerlrc "-Star Divine- フィナーレ" "小山百代 / 三森铃子 / 富田麻帆 / 相羽あいな" "https://kira.host/assets/Audios/M5000001Bif12b4u3H.mp3" "https://kira.host/assets/Pictures/Others/Star_Divine.jpg" %}
 [00:00.550]-Star Divine- フィナーレ (《少女 ☆ 歌剧 Revue Starlight》TV 动画第 10 集插曲) - 小山百代/三森すずこ (三森铃子)/富田麻帆/相羽あいな
 [00:02.600]词：中村彼方
 [00:03.480]曲：本多友紀

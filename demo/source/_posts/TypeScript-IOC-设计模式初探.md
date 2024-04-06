@@ -174,7 +174,7 @@ const sniper = new Sniper();
 console.log(sniper._rifle);
 ```
 执行结果：
-![执行结果](https://assets.kira.host/Pictures/Others/1661827643113-6d1a0248-64a7-4585-858b-226b73fccb53.png)
+![执行结果](https://kira.host/assets/Pictures/Others/1661827643113-6d1a0248-64a7-4585-858b-226b73fccb53.png)
 可以看到，我们这枚持枪证实际上是在 Sniper 实例化时被挂在了实例对象上。
 但是，目前我们只实现了生成发放持枪证，士兵并不能使用这枚持枪证去拿到真正的枪支。那么下面我们将来实现军械部的函数。
 
@@ -269,7 +269,7 @@ export function createGunDecorator<T>(gunId: string): Identifier<T> {
 const sniper = new Sniper();
 sniper.trigger();
 ```
-![](https://assets.kira.host/Pictures/Others/1661830223752-1d47f742-5121-4d5c-8f9d-0bdd4d858415.png)
+![](https://kira.host/assets/Pictures/Others/1661830223752-1d47f742-5121-4d5c-8f9d-0bdd4d858415.png)
 
 现在，这一套流程就非常清楚了：
 1. 生产出枪支后，为枪支指定一本持枪证，加入到军械部的库房中；
