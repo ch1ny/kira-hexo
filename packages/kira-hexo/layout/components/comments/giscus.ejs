@@ -1,0 +1,39 @@
+<% if (theme.giscus.active) { %>
+	<div class="giscus"></div>
+  <% if (theme.giscus.mapping === 'specific' || theme.giscus.mapping === 'number') { %>
+    <script src="<%- theme.cdn.giscus.js %>"
+      data-repo="<%= theme.giscus.repo %>"
+      data-repo-id="<%= theme.giscus.repoID %>"
+      data-category="<%= theme.giscus.category %>"
+      data-category-id="<%= theme.giscus.categoryID %>"
+      data-mapping="<%= theme.giscus.mapping %>"
+      data-term="<%= theme.giscus.term %>"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="preferred_color_scheme"
+      data-lang="en"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async  
+    ></script>
+  <% } else { %>
+    <script src="<%- theme.cdn.giscus.js %>"
+      data-repo="<%= theme.giscus.repo %>"
+      data-repo-id="<%= theme.giscus.repoID %>"
+      data-category="<%= theme.giscus.category %>"
+      data-category-id="<%= theme.giscus.categoryID %>"
+      data-mapping="<%= theme.giscus.mapping %>"
+      data-strict="<%= theme.giscus.strict ? 1 : 0 %>"
+      data-reactions-enabled="<%= theme.giscus.reactions === false ? 0 : 1 %>"
+      data-emit-metadata="<%= theme.giscus.metadata ? 1 : 0 %>"
+      data-input-position="top"
+      data-theme="<%= theme.giscus.theme %>"
+      data-lang="<%= theme.giscus.lang %>"
+      data-loading="lazy"
+      crossorigin="anonymous"
+      async  
+    ></script>
+  <% } %>
+<% } %>

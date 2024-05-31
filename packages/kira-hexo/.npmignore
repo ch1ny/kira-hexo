@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+_multiconfig.yml
+demo/
+*.lock
+preview.png
+.github/
+pnpm-lock.yaml
