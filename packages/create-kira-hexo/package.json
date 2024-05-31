@@ -1,0 +1,42 @@
+{
+	"name": "create-kira-hexo",
+	"version": "1.4.7",
+	"bin": {
+		"create-kira-hexo": "bin/index"
+	},
+	"author": "德布罗煜",
+	"license": "MIT",
+	"description": "A kirameki ✨ hexo theme for your blog.",
+	"keywords": [
+		"hexo",
+		"theme",
+		"kira"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ch1ny/kira-hexo.git"
+	},
+	"homepage": "https://kira.host/hexo/",
+	"bugs": {
+		"url": "https://github.com/ch1ny/kira-hexo/issues"
+	},
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/"
+	},
+	"scripts": {
+		"prepublishOnly": "gulp"
+	},
+	"devDependencies": {
+		"@types/fs-extra": "^11.0.1",
+		"@types/gulp": "^4.0.10",
+		"@types/node": "^18.15.3",
+		"gulp": "^4.0.2",
+		"gulp-clean": "^0.4.0",
+		"gulp-typescript": "^6.0.0-alpha.1",
+		"typescript": "^4.9.5"
+	},
+	"dependencies": {
+		"chalk": "4",
+		"fs-extra": "^11.1.0"
+	}
+}

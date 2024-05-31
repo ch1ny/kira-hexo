@@ -1,0 +1,7 @@
+#!/usr/bin/env node
+const main = require('../dist/index.js').default;
+
+const defaultTargetDir = 'kira-hexo-blog';
+const targetDir = process.argv.slice(2).join(' ');
+
+main(targetDir ?? defaultTargetDir);
