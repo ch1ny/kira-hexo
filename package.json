@@ -1,13 +1,16 @@
 {
   "name": "kira-hexo-monorepo",
-  "version": "1.4.7",
+  "version": "1.4.8",
   "description": "",
   "private": true,
   "scripts": {
-    "prepublishOnly": "lerna run prepublishOnly",
-    "publish": "lerna publish",
+    "prepublishOnly": "lerna prepublishOnly --no-private",
+    "publish": "lerna publish --no-private",
     "version": "lerna version --no-private"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
