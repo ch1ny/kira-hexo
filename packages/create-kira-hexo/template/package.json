@@ -12,7 +12,7 @@
 		"version": ""
 	},
 	"dependencies": {
-		"hexo": "^6.3.0",
+		"hexo": "^7.3.0",
 		"hexo-generator-archive": "^2.0.0",
 		"hexo-generator-category": "^2.0.0",
 		"hexo-generator-index": "^3.0.0",
@@ -21,6 +21,6 @@
 		"hexo-renderer-marked": "^6.0.0",
 		"hexo-renderer-stylus": "^2.1.0",
 		"hexo-server": "^3.0.0",
-		"hexo-theme-kira": "latest"
+		"hexo-theme-kira": "^1.4.8"
 	}
 }

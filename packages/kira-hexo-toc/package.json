@@ -1,0 +1,9 @@
+{
+	"name": "hexo-kira-toc",
+	"version": "1.4.7",
+	"main": "index.js",
+	"dependencies": {
+		"cheerio": "^1.0.0",
+		"markdown-toc": "^1.2.0"
+	}
+}
