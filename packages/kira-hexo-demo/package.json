@@ -7,13 +7,13 @@
 		"build": "hexo generate",
 		"clean": "hexo clean",
 		"dev": "hexo server",
-		"predev": "yalc remove hexo-theme-kira&&pnpm clean&&yalc add hexo-theme-kira&&pnpm i"
+		"predev": "npm run clean"
 	},
 	"hexo": {
-		"version": "6.3.0"
+		"version": "7.3.0"
 	},
 	"dependencies": {
-		"hexo": "^6.3.0",
+		"hexo": "^7.3.0",
 		"hexo-generator-archive": "^2.0.0",
 		"hexo-generator-category": "^2.0.0",
 		"hexo-generator-index": "^3.0.0",
@@ -22,7 +22,7 @@
 		"hexo-renderer-marked": "^6.0.0",
 		"hexo-renderer-stylus": "^2.1.0",
 		"hexo-server": "^3.0.0",
-		"hexo-theme-kira": "^1.4.7",
+		"hexo-theme-kira": "file:../kira-hexo",
 		"hexo-theme-landscape": "^0.0.3"
 	}
 }
