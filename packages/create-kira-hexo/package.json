@@ -1,6 +1,6 @@
 {
 	"name": "create-kira-hexo",
-	"version": "1.4.8",
+	"version": "1.4.7",
 	"bin": {
 		"create-kira-hexo": "bin/index"
 	},

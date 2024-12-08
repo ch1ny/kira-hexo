@@ -1,6 +1,6 @@
 {
 	"name": "hexo-theme-kira",
-	"version": "1.4.8",
+	"version": "1.4.7",
 	"description": "A kirameki ✨ hexo theme for your blog.",
 	"keywords": [
 		"hexo",
@@ -19,8 +19,8 @@
 	},
 	"homepage": "https://kira.host/hexo/",
 	"dependencies": {
-		"hexo-tag-aplayer": "^3.0.4",
 		"hexo-kira-toc": "workspace:*",
+		"hexo-tag-aplayer": "^3.0.4",
 		"hexo-wordcount": "^6.0.1"
 	}
 }
