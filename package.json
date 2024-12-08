@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "prepublishOnly": "lerna run prepublishOnly --no-private",
+    "prepublishOnly": "lerna prepublishOnly --no-private",
     "publish": "lerna publish --no-private",
     "version": "lerna version --no-private"
   },
