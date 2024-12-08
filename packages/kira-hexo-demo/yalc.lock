@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "packages": {
+    "hexo-theme-kira": {
+      "signature": "79243c3d65adea08ada1e38ae4464fbb",
+      "file": true,
+      "replaced": "^1.4.7"
+    }
+  }
+}
