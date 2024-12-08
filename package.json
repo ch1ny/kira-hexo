@@ -4,10 +4,13 @@
   "description": "",
   "private": true,
   "scripts": {
-    "prepublishOnly": "lerna run prepublishOnly",
-    "publish": "lerna publish",
+    "prepublishOnly": "lerna run prepublishOnly --no-private",
+    "publish": "lerna publish --no-private",
     "version": "lerna version --no-private"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
