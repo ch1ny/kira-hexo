@@ -1,6 +1,6 @@
 {
 	"name": "kira-hexo-docs",
-	"version": "1.4.8",
+	"version": "1.4.9",
 	"main": "index.js",
 	"author": "德布罗煜",
 	"license": "MIT",
